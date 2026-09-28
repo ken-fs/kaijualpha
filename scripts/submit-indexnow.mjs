@@ -9,22 +9,22 @@ import { readFileSync } from "node:fs";
 
 // Read the generated JSON directly. Importing src/data/game.ts would need a TS
 // loader, and this script has to run in a bare Node context.
-const { pets } = JSON.parse(
+const { kaiju } = JSON.parse(
   readFileSync(new URL("../src/data/game.json", import.meta.url), "utf8")
 );
 
-const HOST = "petsuniverse.site";
+const HOST = "kaijualpha.world";
 const KEY = readFileSync(new URL("../.indexnow-key", import.meta.url), "utf8").trim();
 
 const PATHS = [
   "/",
   "/codes/",
-  "/pets/",
-  "/values/",
+  "/kaiju/",
   "/tier-list/",
+  "/evolutions/",
   "/guide/",
   "/about/",
-  ...pets.map((p) => `/pets/${p.slug}/`),
+  ...kaiju.map((k) => `/kaiju/${k.slug}/`),
 ];
 
 const body = {
