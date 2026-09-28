@@ -14,6 +14,22 @@ import raw from "./game.json";
  *  - The `gaps` list is rendered on /about/ rather than left implicit.
  */
 
+export type KaijuSkill = { key: string; name: string; damage: number | null; cooldown: string | null };
+export type KaijuStats = {
+  level: number;
+  health: number;
+  healthMax: number;
+  energy: number;
+  healthRegen: string;
+  energyRegen: string;
+  walkSpeed: number;
+  runSpeed: number;
+  swimNormal: number;
+  swimSprint: number;
+  skills: KaijuSkill[];
+  gauge: string;
+  source: string;
+};
 export type Kaiju = {
   name: string;
   slug: string;
@@ -23,13 +39,15 @@ export type Kaiju = {
   staleTier: string | null;
   stalePrice: string | null;
   note: string | null;
+  /** Frame-read in-game stats (only present where creator footage showed the panel). */
+  stats?: KaijuStats;
 };
 
 export type Code = {
   code: string;
   reward: string;
   sources: number;
-  status: "unconfirmed" | "expired-risk";
+  status: "active" | "unconfirmed" | "expired-risk";
   note: string;
 };
 export type System = { name: string; detail: string };

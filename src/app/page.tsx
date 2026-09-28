@@ -72,12 +72,12 @@ export default function HomePage() {
           </div>
 
           {newestCode && (
-            <div className="mt-8 flex max-w-xl flex-wrap items-center gap-3 rounded-[var(--radius-container)] border border-foreground/15 bg-background/55 p-4 backdrop-blur">
-              <span className="text-sm text-muted-foreground">Newest code (unverified):</span>
-              <CopyCode code={newestCode.code} />
+            <div className="mt-8 flex max-w-xl flex-wrap items-center gap-3 rounded-[var(--radius-container)] border border-primary/30 bg-background/55 p-4 backdrop-blur">
               <span className="text-sm text-muted-foreground">
-                {codes.filter((c) => c.status === "unconfirmed").length} awaiting a second source
+                {newestCode.status === "active" ? "Newest code (verified ×2 creators):" : "Newest code (unverified):"}
               </span>
+              <CopyCode code={newestCode.code} />
+              <span className="text-sm font-medium text-primary">{newestCode.reward}</span>
             </div>
           )}
         </div>

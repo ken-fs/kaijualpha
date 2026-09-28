@@ -84,6 +84,38 @@ export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) 
             />
           </dl>
 
+          {k.stats && (
+            <div className="mt-8 rounded-[var(--radius-container)] border border-primary/30 bg-card p-5">
+              <h2 className="text-sm font-medium">
+                In-game stats — Level {k.stats.level}{" "}
+                <span className="ml-1 rounded-[var(--radius-control)] bg-primary/10 px-2 py-0.5 text-[11px] text-primary">
+                  frame-read, {game.currentUpdate}
+                </span>
+              </h2>
+              <dl className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded-[var(--radius-container)] border rule bg-border sm:grid-cols-4">
+                <Stat label="Health" value={`${k.stats.health.toLocaleString()} (max ${k.stats.healthMax.toLocaleString()})`} />
+                <Stat label="Energy" value={String(k.stats.energy)} />
+                <Stat label="Regen (HP/EN)" value={k.stats.healthRegen} />
+                <Stat label="Walk / Run" value={`${k.stats.walkSpeed} / ${k.stats.runSpeed}`} />
+                <Stat label="Swim / Sprint" value={`${k.stats.swimNormal} / ${k.stats.swimSprint}`} />
+                <Stat label="Gauge" value="Catastrophe ×/200" />
+              </dl>
+              <h3 className="mt-5 text-xs font-medium text-muted-foreground">Moveset</h3>
+              <ul className="mt-2 space-y-1">
+                {k.stats.skills.map((s) => (
+                  <li key={s.key} className="flex items-baseline gap-3 text-sm">
+                    <span className="w-6 shrink-0 rounded bg-muted px-1.5 py-0.5 text-center font-mono text-xs">{s.key}</span>
+                    <span className="flex-1">{s.name}</span>
+                    <span className="shrink-0 font-mono text-xs text-muted-foreground tabular">
+                      {s.damage != null ? `${s.damage} dmg` : "—"}{s.cooldown ? ` · ${s.cooldown}` : ""}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-xs text-muted-foreground">Source: {k.stats.source}.</p>
+            </div>
+          )}
+
           {k.stalePrice && (
             <div className="mt-8 rounded-[var(--radius-container)] border rule bg-card p-5">
               <h2 className="text-sm font-medium">Unlock cost — historical</h2>

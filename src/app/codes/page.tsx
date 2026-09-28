@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function CodesPage() {
+  const active = codes.filter((c) => c.status === "active");
   const unconfirmed = codes.filter((c) => c.status === "unconfirmed");
   const expiredRisk = codes.filter((c) => c.status === "expired-risk");
 
@@ -38,6 +39,33 @@ export default function CodesPage() {
 
       <div className="grid gap-10 pb-16 lg:grid-cols-[1.3fr_1fr]">
         <div>
+          {active.length > 0 && (
+            <section className="mb-10">
+              <h2 className="text-sm font-medium">
+                Corroborated ({active.length})
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Redeemed on camera by two independent creators — the strongest
+                evidence this site accepts short of playing it ourselves.
+              </p>
+              <ul className="mt-4 space-y-2">
+                {active.map((c) => (
+                  <li
+                    key={c.code}
+                    className="flex flex-wrap items-center justify-between gap-3 rounded-[var(--radius-container)] border border-primary/40 bg-card p-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <CopyCode code={c.code} />
+                      <span className="text-sm font-medium text-primary">{c.reward}</span>
+                    </div>
+                    <span className="text-xs text-muted-foreground max-w-[40ch]">{c.note}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {unconfirmed.length > 0 && (
           <section>
             <h2 className="text-sm font-medium">
               Awaiting a second source ({unconfirmed.length})
@@ -61,6 +89,7 @@ export default function CodesPage() {
               ))}
             </ul>
           </section>
+          )}
 
           <section className="mt-10">
             <h2 className="text-sm font-medium">Expired risk ({expiredRisk.length})</h2>

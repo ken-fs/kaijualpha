@@ -16,73 +16,623 @@
     "robloxUrl": "https://www.roblox.com/games/139769003880269/Kaiju-Alpha"
   },
   "kaiju": [
-    { "name": "Godzilla Ultima", "slug": "godzilla-ultima", "era": "Singular Point", "source": "badge API (Max Ultima Godzilla) + game description (Update 51) + Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": "Update 51 addition. Skill-bar mechanics: heals over 100 bar, hitbox increase, 10% damage reduction while charging, mist-storm utility." },
-    { "name": "Space Godzilla", "slug": "space-godzilla", "era": "Heisei", "source": "badge API + Fandom page + kaijualpha.com tier list (named creators)", "verified": true, "staleTier": "S", "stalePrice": "500,000 G-cells (Update 21 era, named creator source)", "note": "Stale-era S tier: crowd-clear farming route (skill 2 + crystal garden detonate, skill 4 pull). Verify current stats." },
-    { "name": "Destoroyah Final Form", "slug": "destoroyah-final-form", "era": "Heisei", "source": "badge API + Fandom page (3 form pages)", "verified": true, "staleTier": "S", "stalePrice": null, "note": "Endgame lineage per stale tier list; named creator called it overpowered pre-nerf, nerf details unpublished. Forms: Aggregate, Final, Flying, Perfect/Form 4." },
-    { "name": "Destoroyah Aggregate", "slug": "destoroyah-aggregate", "era": "Heisei", "source": "Fandom page + kaijualpha.com (Update 24 addition)", "verified": true, "staleTier": null, "stalePrice": null, "note": "Update 24 addition per stale site." },
-    { "name": "Shimo", "slug": "shimo", "era": "Monsterverse", "source": "badge API (Max Shimo) + Fandom page + kaijualpha.com", "verified": true, "staleTier": "A", "stalePrice": "500,000 G-cells band (named creator)", "note": "Kill-fed Sky Blast: kills charge the burst, compounds mid-fight." },
-    { "name": "Monster Zero", "slug": "monster-zero", "era": "Monsterverse", "source": "badge API (Max Monster Zero) + kaijualpha.com", "verified": true, "staleTier": "A", "stalePrice": "Objective unlock (skull collection); skull count unverified — AI wikis only, per kaijualpha.com", "note": "Skill 5 voltage-charge route per Tycooner. Skull locations guide exists (ItzVexo)." },
-    { "name": "Monster X", "slug": "monster-x", "era": "Final Wars", "source": "kaijualpha.com (Update 32, named creator from play)", "verified": true, "staleTier": "A", "stalePrice": "200,000 G-cells, no prerequisites (named creator)", "note": "Cheapest endgame unlock per stale data; nobody commented on actual play strength." },
-    { "name": "Heisei Godzilla", "slug": "heisei-godzilla", "era": "Heisei", "source": "badge API + Fandom page + kaijualpha.com", "verified": true, "staleTier": "B", "stalePrice": null, "note": "Cell-farming pick: pulse + twin beams snipe crowds from range; assists pay full cells." },
-    { "name": "Biollante", "slug": "biollante", "era": "Heisei", "source": "Fandom page + kaijualpha.com (named creator)", "verified": true, "staleTier": "B", "stalePrice": null, "note": "Named best beginner kaiju by Nerdious Momentos (qualifies: still slow)." },
-    { "name": "Biollante Rose Form", "slug": "biollante-rose", "era": "Heisei", "source": "Fandom category structure (forms as separate pages)", "verified": false, "staleTier": null, "stalePrice": null, "note": "Fandom lists Biollante; form split unconfirmed for current update." },
-    { "name": "Kamata Kun", "slug": "kamata-kun", "era": "Shin", "source": "badge API (Max Kamata Kun)", "verified": true, "staleTier": null, "stalePrice": null, "note": "Shin Godzilla second form. Max-progression badge exists." },
-    { "name": "Showa Anguirus", "slug": "showa-anguirus", "era": "Showa", "source": "badge API (Max Showa Anguirus)", "verified": true, "staleTier": null, "stalePrice": null, "note": "Fandom also lists Anguirus 1955 — same kaiju, naming variant to dedupe." },
-    { "name": "Gojira 1954", "slug": "gojira-1954", "era": "Showa", "source": "badge API (Max Gojira 1954) + Fandom (Godzilla 1954)", "verified": true, "staleTier": "unranked (stale era)", "stalePrice": null, "note": "The original. Stale tier list left 1954 unranked (nobody published an opinion)." },
-    { "name": "Godzilla 1955", "slug": "godzilla-1955", "era": "Showa", "source": "Fandom page + kaijualpha.com (named creator)", "verified": true, "staleTier": "D", "stalePrice": null, "note": "Named near-unusable by Nerdious Momentos in the only balance commentary on record (stale era)." },
-    { "name": "Godzilla 1962", "slug": "godzilla-1962", "era": "Showa", "source": "Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": "King Kong vs Godzilla incarnation." },
-    { "name": "Godzilla 2014", "slug": "godzilla-2014", "era": "Monsterverse", "source": "Fandom page (Monsterverse category)", "verified": true, "staleTier": null, "stalePrice": null, "note": null },
-    { "name": "Godzilla Amphibia", "slug": "godzilla-amphibia", "era": "Singular Point", "source": "Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": null },
-    { "name": "Godzilla Terrestris", "slug": "godzilla-terrestris", "era": "Singular Point", "source": "Fandom page + dedicated codes video (Update 50/51 era)", "verified": true, "staleTier": null, "stalePrice": null, "note": "Recent addition; own codes video exists." },
-    { "name": "Godzilla 2000", "slug": "godzilla-2000", "era": "Millennium", "source": "kaijualpha.com (named creator from recorded play)", "verified": true, "staleTier": "B", "stalePrice": null, "note": "Atomic breath crowd spam; Tycooner warns players hunt you for it." },
-    { "name": "Shin Godzilla", "slug": "shin-godzilla", "era": "Shin", "source": "kaijualpha.com (named creator)", "verified": true, "staleTier": "B", "stalePrice": null, "note": "Back beam + tail beam angle coverage." },
-    { "name": "Final Wars Godzilla", "slug": "final-wars-godzilla", "era": "Final Wars", "source": "kaijualpha.com unranked block (official record)", "verified": true, "staleTier": "unranked", "stalePrice": null, "note": null },
-    { "name": "Godzilla Minus One", "slug": "godzilla-minus-one", "era": "Minus One", "source": "kaijualpha.com unranked block", "verified": true, "staleTier": "unranked", "stalePrice": null, "note": null },
-    { "name": "Godzilla Aquatilis", "slug": "godzilla-aquatilis", "era": "Singular Point", "source": "kaijualpha.com unranked block", "verified": true, "staleTier": "unranked", "stalePrice": null, "note": null },
-    { "name": "King Ghidorah", "slug": "king-ghidorah", "era": "Showa", "source": "kaijualpha.com (creator video titles quote spends 794,974 / 965,765 — spend reference, NOT price)", "verified": true, "staleTier": "unranked", "stalePrice": "unknown — spend quotes are not prices", "note": "Among the most searched kaiju per stale site analytics." },
-    { "name": "Queen MUTO", "slug": "queen-muto", "era": "Monsterverse", "source": "kaijualpha.com unranked block (creator spend reference)", "verified": true, "staleTier": "unranked", "stalePrice": "unknown", "note": null },
-    { "name": "Skar King", "slug": "skar-king", "era": "Monsterverse", "source": "kaijualpha.com unranked block", "verified": true, "staleTier": "unranked", "stalePrice": null, "note": null },
-    { "name": "Kong 2021", "slug": "kong-2021", "era": "Monsterverse", "source": "kaijualpha.com unranked block", "verified": true, "staleTier": "unranked", "stalePrice": null, "note": "Distinct from Kong 1962 per stale roster." },
-    { "name": "Kong 1962", "slug": "kong-1962", "era": "Showa", "source": "Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": null },
-    { "name": "Megalon", "slug": "megalon", "era": "Showa", "source": "kaijualpha.com unranked block", "verified": true, "staleTier": "unranked", "stalePrice": null, "note": null },
-    { "name": "Suko", "slug": "suko", "era": "Monsterverse", "source": "kaijualpha.com unranked block", "verified": true, "staleTier": "unranked", "stalePrice": null, "note": null },
-    { "name": "Doug", "slug": "doug", "era": "Monsterverse", "source": "kaijualpha.com unranked block", "verified": true, "staleTier": "unranked", "stalePrice": null, "note": "The meme kaiju from Godzilla x Kong." },
-    { "name": "Titan X", "slug": "titan-x", "era": "original", "source": "kaijualpha.com unranked block", "verified": false, "staleTier": "unranked", "stalePrice": null, "note": "Name from stale site unverified against current sources." },
-    { "name": "Kiryu Type 3", "slug": "kiryu-type-3", "era": "Millennium", "source": "kaijualpha.com unranked block", "verified": false, "staleTier": "unranked", "stalePrice": null, "note": null },
-    { "name": "Mechagodzilla 1974", "slug": "mechagodzilla-1974", "era": "Showa", "source": "Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": null },
-    { "name": "Jet Jaguar 1973", "slug": "jet-jaguar-1973", "era": "Showa", "source": "Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": null },
-    { "name": "Hollow Jet Jaguar", "slug": "hollow-jet-jaguar", "era": "Singular Point", "source": "Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": "Singular Point variant." },
-    { "name": "Showa Jet Jaguar", "slug": "showa-jet-jaguar", "era": "Showa", "source": "Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": null },
-    { "name": "Showa Gigan", "slug": "showa-gigan", "era": "Showa", "source": "kaijualpha.com (Update 39 headline addition, named creator)", "verified": true, "staleTier": "C (group verdict)", "stalePrice": null, "note": "C-tier group verdict: slow, long cooldowns; melee-only farming is worst way to earn cells." },
-    { "name": "Rodan", "slug": "rodan", "era": "Showa", "source": "kaijualpha.com C-tier group", "verified": true, "staleTier": "C (group)", "stalePrice": null, "note": "Group verdict applies; no individual commentary published." },
-    { "name": "Showa Hedorah", "slug": "showa-hedorah", "era": "Showa", "source": "kaijualpha.com C-tier group", "verified": true, "staleTier": "C (group)", "stalePrice": null, "note": null },
-    { "name": "Mothra Larva 1964", "slug": "mothra-larva-1964", "era": "Showa", "source": "Fandom page + kaijualpha.com C-tier group", "verified": true, "staleTier": "C (group)", "stalePrice": null, "note": null },
-    { "name": "Mothra Imago 1964", "slug": "mothra-imago-1964", "era": "Showa", "source": "Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": "Adult form; larva↔imago progression likely, confirm in-game." },
-    { "name": "Showa Mothra", "slug": "showa-mothra", "era": "Showa", "source": "Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": null },
-    { "name": "Tank", "slug": "tank", "era": "original", "source": "Fandom page (Characters category)", "verified": false, "staleTier": null, "stalePrice": null, "note": "Playable military unit, not a kaiju — include in roster but flag." },
-    { "name": "Destoroyah Flying Form", "slug": "destoroyah-flying", "era": "Heisei", "source": "Fandom page", "verified": true, "staleTier": null, "stalePrice": null, "note": "Form page; evolution step unclear." },
-    { "name": "Godzilla 1954", "slug": "godzilla-1954", "era": "Showa", "source": "Fandom page + kaijualpha.com unranked", "verified": true, "staleTier": "unranked", "stalePrice": null, "note": "Possible duplicate of Gojira 1954 — dedupe rule: badge name wins, this is the localization alias." }
+    {
+      "name": "Godzilla Ultima",
+      "slug": "godzilla-ultima",
+      "era": "Singular Point",
+      "source": "badge API (Max Ultima Godzilla) + game description (Update 51) + Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Update 51 addition. Full Level 200 kit frame-read from creator footage: 8 named moves (Morsus/Sanguis/Terrae/Radiation×2/Clamor/Minea/Archetype), Health 7,000 base (9,100 with points), Catastrophe Gauge mechanic. Stat table below.",
+      "stats": {
+        "level": 200,
+        "health": 7000,
+        "healthMax": 9100,
+        "energy": 100,
+        "healthRegen": "3%/s",
+        "energyRegen": "3%/s",
+        "walkSpeed": 2,
+        "runSpeed": 4,
+        "swimNormal": 4,
+        "swimSprint": 20,
+        "skills": [
+          {
+            "key": "1",
+            "name": "Morsus Singularis",
+            "damage": 670,
+            "cooldown": "10s"
+          },
+          {
+            "key": "2",
+            "name": "Sanguis Cauda",
+            "damage": 731,
+            "cooldown": "10s"
+          },
+          {
+            "key": "3",
+            "name": "Terrae Fractura",
+            "damage": 804,
+            "cooldown": "10s"
+          },
+          {
+            "key": "4",
+            "name": "Radiation Vaga/Turben Singularis",
+            "damage": 1520,
+            "cooldown": "60s"
+          },
+          {
+            "key": "5",
+            "name": "Radiation Singularis",
+            "damage": 238,
+            "cooldown": "40s"
+          },
+          {
+            "key": "R",
+            "name": "Clamor Singularis",
+            "damage": null,
+            "cooldown": null
+          },
+          {
+            "key": "T",
+            "name": "Minea Cataclysmo",
+            "damage": null,
+            "cooldown": "9.3s (observed)"
+          },
+          {
+            "key": "V",
+            "name": "Archetype Interitus/Ultima Finis",
+            "damage": 58,
+            "cooldown": "20s"
+          }
+        ],
+        "gauge": "Catastrophe Gauge (x/200) — combat meter visible on HUD",
+        "source": "frame-read from 'HOW STRONG IS LEVEL 200 GODZILLA ULTIMA' creator video (Sep 2026), Update 51 build; damage values at a 33-point strength allocation, so treat as mid-build reference not max"
+      }
+    },
+    {
+      "name": "Space Godzilla",
+      "slug": "space-godzilla",
+      "era": "Heisei",
+      "source": "badge API + Fandom page + kaijualpha.com tier list (named creators)",
+      "verified": true,
+      "staleTier": "S",
+      "stalePrice": "500,000 G-cells (Update 21 era, named creator source)",
+      "note": "Stale-era S tier: crowd-clear farming route (skill 2 + crystal garden detonate, skill 4 pull). Verify current stats."
+    },
+    {
+      "name": "Destoroyah Final Form",
+      "slug": "destoroyah-final-form",
+      "era": "Heisei",
+      "source": "badge API + Fandom page (3 form pages)",
+      "verified": true,
+      "staleTier": "S",
+      "stalePrice": null,
+      "note": "Endgame lineage per stale tier list; named creator called it overpowered pre-nerf, nerf details unpublished. Forms: Aggregate, Final, Flying, Perfect/Form 4."
+    },
+    {
+      "name": "Destoroyah Aggregate",
+      "slug": "destoroyah-aggregate",
+      "era": "Heisei",
+      "source": "Fandom page + kaijualpha.com (Update 24 addition)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Update 24 addition per stale site."
+    },
+    {
+      "name": "Shimo",
+      "slug": "shimo",
+      "era": "Monsterverse",
+      "source": "badge API (Max Shimo) + Fandom page + kaijualpha.com",
+      "verified": true,
+      "staleTier": "A",
+      "stalePrice": "500,000 G-cells band (named creator)",
+      "note": "Kill-fed Sky Blast: kills charge the burst, compounds mid-fight."
+    },
+    {
+      "name": "Monster Zero",
+      "slug": "monster-zero",
+      "era": "Monsterverse",
+      "source": "badge API (Max Monster Zero) + kaijualpha.com",
+      "verified": true,
+      "staleTier": "A",
+      "stalePrice": "Objective unlock (skull collection); skull count unverified — AI wikis only, per kaijualpha.com",
+      "note": "Skill 5 voltage-charge route per Tycooner. Skull locations guide exists (ItzVexo)."
+    },
+    {
+      "name": "Monster X",
+      "slug": "monster-x",
+      "era": "Final Wars",
+      "source": "kaijualpha.com (Update 32, named creator from play)",
+      "verified": true,
+      "staleTier": "A",
+      "stalePrice": "200,000 G-cells, no prerequisites (named creator)",
+      "note": "Cheapest endgame unlock per stale data; nobody commented on actual play strength."
+    },
+    {
+      "name": "Heisei Godzilla",
+      "slug": "heisei-godzilla",
+      "era": "Heisei",
+      "source": "badge API + Fandom page + kaijualpha.com",
+      "verified": true,
+      "staleTier": "B",
+      "stalePrice": null,
+      "note": "Cell-farming pick: pulse + twin beams snipe crowds from range; assists pay full cells."
+    },
+    {
+      "name": "Biollante",
+      "slug": "biollante",
+      "era": "Heisei",
+      "source": "Fandom page + kaijualpha.com (named creator)",
+      "verified": true,
+      "staleTier": "B",
+      "stalePrice": null,
+      "note": "Named best beginner kaiju by Nerdious Momentos (qualifies: still slow)."
+    },
+    {
+      "name": "Biollante Rose Form",
+      "slug": "biollante-rose",
+      "era": "Heisei",
+      "source": "Fandom category structure (forms as separate pages)",
+      "verified": false,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Fandom lists Biollante; form split unconfirmed for current update."
+    },
+    {
+      "name": "Kamata Kun",
+      "slug": "kamata-kun",
+      "era": "Shin",
+      "source": "badge API (Max Kamata Kun)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Shin Godzilla second form. Max-progression badge exists."
+    },
+    {
+      "name": "Showa Anguirus",
+      "slug": "showa-anguirus",
+      "era": "Showa",
+      "source": "badge API (Max Showa Anguirus)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Fandom also lists Anguirus 1955 — same kaiju, naming variant to dedupe."
+    },
+    {
+      "name": "Gojira 1954",
+      "slug": "gojira-1954",
+      "era": "Showa",
+      "source": "badge API (Max Gojira 1954) + Fandom (Godzilla 1954)",
+      "verified": true,
+      "staleTier": "unranked (stale era)",
+      "stalePrice": null,
+      "note": "The original and the starter: new accounts spawn with Gojira 1954 and 57 Cells (seen on two creators' fresh-account footage). Stale tier list left 1954 unranked."
+    },
+    {
+      "name": "Godzilla 1955",
+      "slug": "godzilla-1955",
+      "era": "Showa",
+      "source": "Fandom page + kaijualpha.com (named creator)",
+      "verified": true,
+      "staleTier": "D",
+      "stalePrice": null,
+      "note": "Named near-unusable by Nerdious Momentos in the only balance commentary on record (stale era)."
+    },
+    {
+      "name": "Godzilla 1962",
+      "slug": "godzilla-1962",
+      "era": "Showa",
+      "source": "Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "King Kong vs Godzilla incarnation."
+    },
+    {
+      "name": "Godzilla 2014",
+      "slug": "godzilla-2014",
+      "era": "Monsterverse",
+      "source": "Fandom page (Monsterverse category)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Godzilla Amphibia",
+      "slug": "godzilla-amphibia",
+      "era": "Singular Point",
+      "source": "Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Godzilla Terrestris",
+      "slug": "godzilla-terrestris",
+      "era": "Singular Point",
+      "source": "Fandom page + dedicated codes video (Update 50/51 era)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Recent addition; own codes video exists."
+    },
+    {
+      "name": "Godzilla 2000",
+      "slug": "godzilla-2000",
+      "era": "Millennium",
+      "source": "kaijualpha.com (named creator from recorded play)",
+      "verified": true,
+      "staleTier": "B",
+      "stalePrice": null,
+      "note": "Atomic breath crowd spam; Tycooner warns players hunt you for it."
+    },
+    {
+      "name": "Shin Godzilla",
+      "slug": "shin-godzilla",
+      "era": "Shin",
+      "source": "kaijualpha.com (named creator)",
+      "verified": true,
+      "staleTier": "B",
+      "stalePrice": null,
+      "note": "Back beam + tail beam angle coverage."
+    },
+    {
+      "name": "Final Wars Godzilla",
+      "slug": "final-wars-godzilla",
+      "era": "Final Wars",
+      "source": "kaijualpha.com unranked block (official record)",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Godzilla Minus One",
+      "slug": "godzilla-minus-one",
+      "era": "Minus One",
+      "source": "kaijualpha.com unranked block",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Godzilla Aquatilis",
+      "slug": "godzilla-aquatilis",
+      "era": "Singular Point",
+      "source": "kaijualpha.com unranked block",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "King Ghidorah",
+      "slug": "king-ghidorah",
+      "era": "Showa",
+      "source": "kaijualpha.com (creator video titles quote spends 794,974 / 965,765 — spend reference, NOT price)",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": "unknown — spend quotes are not prices",
+      "note": "Among the most searched kaiju per stale site analytics."
+    },
+    {
+      "name": "Queen MUTO",
+      "slug": "queen-muto",
+      "era": "Monsterverse",
+      "source": "kaijualpha.com unranked block (creator spend reference)",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": "unknown",
+      "note": null
+    },
+    {
+      "name": "Skar King",
+      "slug": "skar-king",
+      "era": "Monsterverse",
+      "source": "kaijualpha.com unranked block",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Kong 2021",
+      "slug": "kong-2021",
+      "era": "Monsterverse",
+      "source": "kaijualpha.com unranked block",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": "Distinct from Kong 1962 per stale roster."
+    },
+    {
+      "name": "Kong 1962",
+      "slug": "kong-1962",
+      "era": "Showa",
+      "source": "Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Megalon",
+      "slug": "megalon",
+      "era": "Showa",
+      "source": "kaijualpha.com unranked block",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Suko",
+      "slug": "suko",
+      "era": "Monsterverse",
+      "source": "kaijualpha.com unranked block",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Doug",
+      "slug": "doug",
+      "era": "Monsterverse",
+      "source": "kaijualpha.com unranked block",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": "The meme kaiju from Godzilla x Kong."
+    },
+    {
+      "name": "Titan X",
+      "slug": "titan-x",
+      "era": "original",
+      "source": "kaijualpha.com unranked block",
+      "verified": false,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": "Name from stale site unverified against current sources."
+    },
+    {
+      "name": "Kiryu Type 3",
+      "slug": "kiryu-type-3",
+      "era": "Millennium",
+      "source": "kaijualpha.com unranked block",
+      "verified": false,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Mechagodzilla 1974",
+      "slug": "mechagodzilla-1974",
+      "era": "Showa",
+      "source": "Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Jet Jaguar 1973",
+      "slug": "jet-jaguar-1973",
+      "era": "Showa",
+      "source": "Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Hollow Jet Jaguar",
+      "slug": "hollow-jet-jaguar",
+      "era": "Singular Point",
+      "source": "Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Singular Point variant."
+    },
+    {
+      "name": "Showa Jet Jaguar",
+      "slug": "showa-jet-jaguar",
+      "era": "Showa",
+      "source": "Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Showa Gigan",
+      "slug": "showa-gigan",
+      "era": "Showa",
+      "source": "kaijualpha.com (Update 39 headline addition, named creator)",
+      "verified": true,
+      "staleTier": "C (group verdict)",
+      "stalePrice": null,
+      "note": "C-tier group verdict: slow, long cooldowns; melee-only farming is worst way to earn cells."
+    },
+    {
+      "name": "Rodan",
+      "slug": "rodan",
+      "era": "Showa",
+      "source": "kaijualpha.com C-tier group",
+      "verified": true,
+      "staleTier": "C (group)",
+      "stalePrice": null,
+      "note": "Group verdict applies; no individual commentary published."
+    },
+    {
+      "name": "Showa Hedorah",
+      "slug": "showa-hedorah",
+      "era": "Showa",
+      "source": "kaijualpha.com C-tier group",
+      "verified": true,
+      "staleTier": "C (group)",
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Mothra Larva 1964",
+      "slug": "mothra-larva-1964",
+      "era": "Showa",
+      "source": "Fandom page + kaijualpha.com C-tier group",
+      "verified": true,
+      "staleTier": "C (group)",
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Mothra Imago 1964",
+      "slug": "mothra-imago-1964",
+      "era": "Showa",
+      "source": "Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Adult form; larva↔imago progression likely, confirm in-game."
+    },
+    {
+      "name": "Showa Mothra",
+      "slug": "showa-mothra",
+      "era": "Showa",
+      "source": "Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": null
+    },
+    {
+      "name": "Tank",
+      "slug": "tank",
+      "era": "original",
+      "source": "Fandom page (Characters category)",
+      "verified": false,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Playable military unit, not a kaiju — include in roster but flag."
+    },
+    {
+      "name": "Destoroyah Flying Form",
+      "slug": "destoroyah-flying",
+      "era": "Heisei",
+      "source": "Fandom page",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Form page; evolution step unclear."
+    },
+    {
+      "name": "Godzilla 1954",
+      "slug": "godzilla-1954",
+      "era": "Showa",
+      "source": "Fandom page + kaijualpha.com unranked",
+      "verified": true,
+      "staleTier": "unranked",
+      "stalePrice": null,
+      "note": "Possible duplicate of Gojira 1954 — dedupe rule: badge name wins, this is the localization alias."
+    }
   ],
   "codes": [
-    { "code": "ULTIMA", "reward": "unknown", "sources": 1, "status": "unconfirmed", "note": "Update 51 code from in-game description reference pattern; must verify in-game" },
-    { "code": "UPDATE51", "reward": "unknown", "sources": 1, "status": "unconfirmed", "note": "pattern-based guess — DO NOT publish as working; verify via codes video frame or in-game" },
-    { "code": "SORRYFORLAG", "reward": "unknown", "sources": 1, "status": "unconfirmed", "note": "kaijualpha.com (stale, Update 24-32 era)" },
-    { "code": "KAIJU100K", "reward": "unknown", "sources": 1, "status": "unconfirmed", "note": "kaijualpha.com (stale)" },
-    { "code": "UPDATE20", "reward": "unknown", "sources": 1, "status": "expired-risk", "note": "kaijualpha.com (stale)" },
-    { "code": "LIKE1500", "reward": "unknown", "sources": 1, "status": "expired-risk", "note": "kaijualpha.com (stale)" },
-    { "code": "ALPHA2024", "reward": "unknown", "sources": 1, "status": "expired-risk", "note": "kaijualpha.com (stale)" }
+    {
+      "code": "Singularity",
+      "reward": "100,000 Coins",
+      "sources": 2,
+      "status": "active",
+      "note": "Update 51 code. Two independent creators redeemed on camera (BMaX Rohaan + Blazze Stars videos, Sep 2026); system message 'has received 100000Coin' visible both times. Verify in game — codes rotate."
+    },
+    {
+      "code": "SORRYFORLAG",
+      "reward": "unknown",
+      "sources": 1,
+      "status": "expired-risk",
+      "note": "kaijualpha.com (stale, Update 24-32 era)"
+    },
+    {
+      "code": "KAIJU100K",
+      "reward": "unknown",
+      "sources": 1,
+      "status": "expired-risk",
+      "note": "kaijualpha.com (stale)"
+    },
+    {
+      "code": "UPDATE20",
+      "reward": "unknown",
+      "sources": 1,
+      "status": "expired-risk",
+      "note": "kaijualpha.com (stale)"
+    },
+    {
+      "code": "LIKE1500",
+      "reward": "unknown",
+      "sources": 1,
+      "status": "expired-risk",
+      "note": "kaijualpha.com (stale)"
+    },
+    {
+      "code": "ALPHA2024",
+      "reward": "unknown",
+      "sources": 1,
+      "status": "expired-risk",
+      "note": "kaijualpha.com (stale)"
+    }
   ],
   "systems": [
-    { "name": "G-cells (currency)", "detail": "Earned by damaging other players — assists pay in full, so reach matters more than kills (Tycooner/Mon Crex, recorded play). Endgame kaiju priced 200,000-500,000 G-cells in the Update 21-32 era; current prices unverified." },
-    { "name": "Leveling & EXP", "detail": "Kaiju level to 200+ (creator videos show Level 200+ gameplay). Fandom has a Leveling & EXP page. Exact curve unpublished by any named source." },
-    { "name": "Skill bar", "detail": "Ultima's kit: attacks over 100 bar heal / increase hitbox; full bar utility transforms. Per-game mechanic, likely shared shape across kaiju — confirm per-kaiju in-game." },
-    { "name": "Skill Points", "detail": "Fandom page exists; allocation rules unpublished by named sources." },
-    { "name": "Archetype spawns", "detail": "Every 30 minutes incl. private servers (Update 51 description). Details thin — high-value gap for a dedicated page." },
-    { "name": "Evolutions / forms", "detail": "Multiple kaiju have form lines (Destoroyah Aggregate→Flying→Final; Mothra Larva→Imago). 'EVOLVED GODZILLA REQUIREMENTS' is a real search query with no good text answer." },
-    { "name": "Objective unlocks", "detail": "Monster Zero unlocks via skull collection (count unverified — AI wikis only per kaijualpha.com); locations guide exists from ItzVexo." }
+    {
+      "name": "G-cells (currency)",
+      "detail": "Earned by damaging other players — assists pay in full, so reach matters more than kills (Tycooner/Mon Crex, recorded play). Endgame kaiju priced 200,000-500,000 G-cells in the Update 21-32 era; current prices unverified."
+    },
+    {
+      "name": "Leveling & EXP",
+      "detail": "Kaiju level to 200+ (creator videos show Level 200+ gameplay). Fandom has a Leveling & EXP page. Exact curve unpublished by any named source."
+    },
+    {
+      "name": "Skill bar",
+      "detail": "Ultima's kit: attacks over 100 bar heal / increase hitbox; full bar utility transforms. Per-game mechanic, likely shared shape across kaiju — confirm per-kaiju in-game."
+    },
+    {
+      "name": "Skill Points",
+      "detail": "Fandom page exists; allocation rules unpublished by named sources."
+    },
+    {
+      "name": "Archetype spawns",
+      "detail": "Every 30 minutes incl. private servers (Update 51 description). Details thin — high-value gap for a dedicated page."
+    },
+    {
+      "name": "Evolutions / forms",
+      "detail": "Multiple kaiju have form lines (Destoroyah Aggregate→Flying→Final; Mothra Larva→Imago). 'EVOLVED GODZILLA REQUIREMENTS' is a real search query with no good text answer."
+    },
+    {
+      "name": "Objective unlocks",
+      "detail": "Monster Zero unlocks via skull collection (count unverified — AI wikis only per kaijualpha.com); locations guide exists from ItzVexo."
+    },
+    {
+      "name": "Catastrophe Gauge",
+      "detail": "HUD meter (x/200) that charges in combat — full mechanic unpublished; Ultima's V move (Archetype Interitus/Ultima Finis) likely interacts with it."
+    },
+    {
+      "name": "Maps",
+      "detail": "Confirmed playable: TOKYO (city + bay) and DESERT. MAP screen offers region select with SPAWN."
+    },
+    {
+      "name": "Shop (Robux)",
+      "detail": "Starter Pack R$99 (key shard + aura + 9,000 Cells); Pacific Rim #1 R$749 (2 kaiju + 30,000 Cells). Robux→Cells: 145=25K, 290=50K, 580=100K, 1,720=300K. Read from in-game shop UI on creator footage."
+    },
+    {
+      "name": "Skill Points",
+      "detail": "Level cap 200 ('MAXED' tag at 200). Points allocate into Energy/Health/Regen/Speed/Strength tracks; damage numbers scale per point (frame-read progression: Morsus Singularis 190→670→875)."
+    }
   ],
   "gaps": [
-    "Current working codes: no cross-source verification yet (YouTube codes videos frame-check pending — yt-dlp rate-limited at build time)",
+    "Older codes (SORRYFORLAG/KAIJU100K/UPDATE20/LIKE1500/ALPHA2024): single stale source only, probably rotated — need one fresh confirmation each",
     "Per-kaiju current stats/movesets: kaijualpha.com data is Update 24-39 era; every stat needs re-verification against Update 51",
     "Current tier meta: no named creator has published a post-Update-40 tier list in text form",
     "Unlock prices for most kaiju: only 3 prices were ever creator-confirmed (stale era)",
