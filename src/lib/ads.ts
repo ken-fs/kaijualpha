@@ -25,16 +25,16 @@ export type AdSlot = {
 
 /** 728×90 leaderboard. Desktop only — it overflows phones. */
 export const LEADERBOARD: AdSlot = {
-  key: "13f5f745de353b152721e5703a240997",
+  key: "2262c0335ec1bffc0e0506836ffef2e9",
   width: 728,
   height: 90,
-  src: "https://bauval.org/22/13f5f745de353b152721e5703a240997",
+  src: "https://bauval.org/22/2262c0335ec1bffc0e0506836ffef2e9",
 };
 
 /** 300×250 rectangle. Fits every viewport. */
 export const RECTANGLE: AdSlot = {
-  key: "64d70ba5acc490f105359e59521a4244",
+  key: "9d1c553a780ff761c6dd077a12126689",
   width: 300,
   height: 250,
-  src: "https://bauval.org/22/64d70ba5acc490f105359e59521a4244",
+  src: "https://bauval.org/22/9d1c553a780ff761c6dd077a12126689",
 };
