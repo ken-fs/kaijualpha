@@ -9,7 +9,7 @@
  * Set NEXT_PUBLIC_SITE_URL in the Cloudflare build environment to override.
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kaijualpha-guide.com"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kaijualpha.world"
 ).replace(/\/+$/, "");
 
 export const SITE_NAME = "Kaiju Alpha Guide";

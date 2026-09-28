@@ -8,7 +8,7 @@ Built on the fleet's second path — Next.js 16 App Router + Tailwind v4 + shadc
 static export served from Cloudflare Workers assets. Same architecture as
 `animedice` (the first path-B site), different content model and a different look.
 
-- Production: https://kaijualpha-guide.com
+- Production: https://kaijualpha.world
 - Repo: https://github.com/ken-fs/kaijualpha
 
 ## The idea
