@@ -1,4 +1,4 @@
-# Pets Universe Reference · 运营档案
+# Kaiju Alpha Reference · 运营档案
 
 > 舰队内**第二个路径 B 站**（Next.js + shadcn，非 AnvilWiki 模板），以 `animedice` 为基底。
 > 建档 2026-09-26（建站当天上线）。
@@ -10,20 +10,20 @@
 
 | 项 | 值 |
 |---|---|
-| 域名 | `petsuniverse.site`（+ www，均 200） |
-| 仓库 | https://github.com/ken-fs/petsuniverse |
-| Worker | `petsuniverse`（Cloudflare，静态资源） |
+| 域名 | `kaijualpha.world`（+ www，均 200） |
+| 仓库 | https://github.com/ken-fs/kaijualpha |
+| Worker | `kaijualpha`（Cloudflare，静态资源） |
 | CF zone | `0b75dc862b6c1d5b5d821d2c7b2a4b57` |
 | **CF 分配的 NS** | `daisy.ns.cloudflare.com` + `lochlan.ns.cloudflare.com` ⚠️ 与舰队其他 zone 不同（见坑 1） |
 | 注册商 | Spaceship（NS 可用 API 改） |
 | 部署 | CF Git 集成，push → 自动构建（`npm run build` → `npx wrangler deploy`） |
 | 构建配置 | trigger `f467ce5c-50d4-459f-9ed5-de7a1a13ddfd` · repo connection `5bbb08c8-969c-4020-8f62-3e8ee6824936` · script tag `2bac3c76489c4f03ba8ab49986158f09` · repo_id `1388839132` |
-| 游戏 | Pets Universe（Roblox，Lip Builds） |
+| 游戏 | Kaiju Alpha（Roblox，Lip Builds） |
 | universeId / placeId | `10759638075` / `74629631798007` |
 | 页面数 | 16（7 顶层 + 4 宠物详情 + robots/sitemap/404） |
 | 技术栈 | Next.js 16 App Router · Tailwind v4 · shadcn/ui(radix) · Geist · Phosphor · `output: export` |
 | GA4 | `G-6SHF89BP9C`（**同意门控**，走 `NEXT_PUBLIC_GA_ID` 构建变量） |
-| GSC | `sc-domain:petsuniverse.site`（TXT 验证 + 服务账号 Owner，2026-09-26） |
+| GSC | `sc-domain:kaijualpha.world`（TXT 验证 + 服务账号 Owner，2026-09-26） |
 | IndexNow | key `8c886f4e6e3aaa6a44f194de32eec4e7` |
 | 广告 | Adsterra：728×90 `13f5f745…` · 300×250 `64d70ba5…`（host `bauval.org`） |
 | 每日巡检 | `scripts/site-hygiene.mjs` 的 MANUAL_SITES（部署标记/sitemap/关键页） |
@@ -91,7 +91,7 @@
 
 ### 日常（已自动化）
 
-| 时间 | 任务 | 覆盖 petsuniverse 的部分 |
+| 时间 | 任务 | 覆盖 kaijualpha 的部分 |
 |---|---|---|
 | 每天 10:00 | `scripts/site-hygiene.mjs` | 部署标记 / sitemap 域名 / 关键页 200 |
 | push 时 | CF Git 集成 | 构建 + 部署（实测 ~2-3 分钟）|
@@ -101,14 +101,14 @@
 ```bash
 # 内容更新（加宠物）
 #   编辑 src/data/game.json 的 pets[] → 页面 + sitemap 自动生成
-cd ~/Desktop/david/Ship/petsuniverse && npm run build && git add -A && git commit -m "..." && git push
+cd ~/Desktop/david/Ship/kaijualpha && npm run build && git add -A && git commit -m "..." && git push
 
-# 验收（petsuniverse 已进 browserPages 基线）
+# 验收（kaijualpha 已进 browserPages 基线）
 node ~/Desktop/david/Ship/scripts/verify.mjs --deep
 
 # GSC 数据
-node ~/Desktop/david/Ship/scripts/gsc.mjs report 7 petsuniverse
-node ~/Desktop/david/Ship/scripts/gsc.mjs inspect "https://petsuniverse.site/"
+node ~/Desktop/david/Ship/scripts/gsc.mjs report 7 kaijualpha
+node ~/Desktop/david/Ship/scripts/gsc.mjs inspect "https://kaijualpha.world/"
 ```
 
 ### 内容更新触发条件
@@ -131,7 +131,7 @@ node ~/Desktop/david/Ship/scripts/gsc.mjs inspect "https://petsuniverse.site/"
 
 ### 2. 🔴 注册商侧的 DNSSEC 会让整站 SERVFAIL
 
-`petsuniverse.site` 在 Spaceship 注册时**默认带 DNSSEC**（.site 注册局有 DS 记录），
+`kaijualpha.world` 在 Spaceship 注册时**默认带 DNSSEC**（.site 注册局有 DS 记录），
 而舰队其他域名都没有。NS 指到 CF 后 CF 不签名 → **所有走 DNSSEC 校验的解析器
 （1.1.1.1 / 8.8.8.8，即绝大多数用户）直接 SERVFAIL**。
 
@@ -218,7 +218,7 @@ POST /accounts/{id}/builds/workers             // 构建配置（trigger 自动�
 
 ### 🔴 立刻（Adsterra 侧，1 分钟）
 
-- [ ] 把 `petsuniverse.site` 加进 Adsterra 后台的站点列表
+- [ ] 把 `kaijualpha.world` 加进 Adsterra 后台的站点列表
 - [ ] 把后台给的 ads.txt 记录贴进 `public/ads.txt`（现只有 AdSense 行 + TODO）
 
 ### 🟡 1-2 周后

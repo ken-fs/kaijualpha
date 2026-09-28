@@ -1,8 +1,8 @@
 # 部署说明
 
-站点：`petsuniverse`（Cloudflare Worker，静态资源）
-仓库：https://github.com/ken-fs/petsuniverse（待建）
-域名：`petsuniverse.site`（**待注册** — RDAP 404 可用，2026-09-26 查）
+站点：`kaijualpha`（Cloudflare Worker，静态资源）
+仓库：https://github.com/ken-fs/kaijualpha（待建）
+域名：`kaijualpha.world`（**待注册** — RDAP 404 可用，2026-09-26 查）
 
 ---
 
@@ -12,14 +12,14 @@
 |---|---|
 | 代码 | ✅ 本地完成（16 页，build 通过，lint 干净） |
 | 数据 | ✅ codes 10 条（1 源）· pets 4 条（1 条有官方 rarity）· systems 12 条 |
-| 构建产物 | ✅ canonical / sitemap / robots 全部指向 `https://petsuniverse.site` |
+| 构建产物 | ✅ canonical / sitemap / robots 全部指向 `https://kaijualpha.world` |
 | IndexNow key | ✅ 已生成 `8c886f4e6e3aaa6a44f194de32eec4e7`（`.indexnow-key` + `public/<key>.txt`） |
 | GitHub 仓库 | ⏳ 待创建并推送 |
-| Worker | ✅ `petsuniverse` 已部署（apex + www 已绑）|
+| Worker | ✅ `kaijualpha` 已部署（apex + www 已绑）|
 | 域名 | ✅ **已注册**（2026-09-26，到期 2027-09-26） |
 | CF zone | ✅ **active**（`0b75dc862b6c1d5b5d821d2c7b2a4b57`，2026-09-26 16:53 建，当晚激活）|
-| 自定义域名 | ✅ **已绑定并生效**：`petsuniverse.site` + `www.petsuniverse.site` 均 HTTP 200 |
-| SSL | ✅ 证书 CN=petsuniverse.site（2026-09-26 → 12-25，CF 自动签发）|
+| 自定义域名 | ✅ **已绑定并生效**：`kaijualpha.world` + `www.kaijualpha.world` 均 HTTP 200 |
+| SSL | ✅ 证书 CN=kaijualpha.world（2026-09-26 → 12-25，CF 自动签发）|
 | IndexNow | ✅ 已推 11 个 URL（HTTP 202）|
 | NS（注册商侧）| ✅ 已用 Spaceship API 填好：**`daisy.ns.cloudflare.com` + `lochlan.ns.cloudflare.com`** |
 | DNSSEC | ✅ 已关闭（注册商侧原本开着，DS 记录已撤 —— 不撤的话指向 CF 后全网 SERVFAIL）|
@@ -28,12 +28,12 @@
 **上线时间线（2026-09-26）**：16:15 域名注册 → 16:20 改 NS → 16:41 DNSSEC 撤 DS →
 16:53 建 zone（CF 分配 daisy/lochlan，与舰队其他 zone 不同）→ 16:55 改 NS 为 CF 那对 →
 当晚 zone active → 21:59 wire-domain.sh 完成绑定 → 全部路由 200。
-| GSC 属性 | ❌ 未建 —— **人工**：加 `sc-domain:petsuniverse.site` → DNS TXT → 加服务账号为 Owner |
+| GSC 属性 | ❌ 未建 —— **人工**：加 `sc-domain:kaijualpha.world` → DNS TXT → 加服务账号为 Owner |
 | GA4 | ✅ 属性 `G-6SHF89BP9C` 已通过构建环境变量接入（同意门控：点接受前不加载任何 Google 脚本）|
 
-> 域名现状（2026-09-26 RDAP 实测）：`petsuniverse.xyz` 已注册（09-17）、
-> `petsuniverse.wiki` 已注册（09-21）、`petsuniverse.net` 已注册（2010）。
-> **`petsuniverse.site` 和 `petsuniverse.gg` 可用**，本仓库按 `.site` 配置。
+> 域名现状（2026-09-26 RDAP 实测）：`kaijualpha.xyz` 已注册（09-17）、
+> `kaijualpha.wiki` 已注册（09-21）、`kaijualpha.net` 已注册（2010）。
+> **`kaijualpha.world` 和 `kaijualpha.gg` 可用**，本仓库按 `.site` 配置。
 
 ---
 
@@ -41,16 +41,16 @@
 
 ### ① ~~注册域名~~ ✅ 已完成
 
-`petsuniverse.site` 已注册（2026-09-26）。
+`kaijualpha.world` 已注册（2026-09-26）。
 
 ### ② 建 GitHub 仓库并推送
 
-仓库名 `ken-fs/petsuniverse`。建好后：
+仓库名 `ken-fs/kaijualpha`。建好后：
 
 ```bash
-cd ~/Desktop/david/Ship/petsuniverse
-git init && git add -A && git commit -m "feat: Pets Universe reference — codes, roster, values framework"
-git remote add origin git@github.com:ken-fs/petsuniverse.git
+cd ~/Desktop/david/Ship/kaijualpha
+git init && git add -A && git commit -m "feat: Kaiju Alpha reference — codes, roster, values framework"
+git remote add origin git@github.com:ken-fs/kaijualpha.git
 GIT_TERMINAL_PROMPT=0 git push -q origin main \
   || GIT_TERMINAL_PROMPT=0 git -c http.proxy=http://127.0.0.1:7897 push -q origin main
 ```
@@ -62,7 +62,7 @@ GIT_TERMINAL_PROMPT=0 git push -q origin main \
 
 ### ③ 域名加进 Cloudflare（建 zone）— ✅ 已完成
 
-dashboard → Add a site → `petsuniverse.site`（账号 `70716e073f0925c564bafd0eaf0be307`）
+dashboard → Add a site → `kaijualpha.world`（账号 `70716e073f0925c564bafd0eaf0be307`）
 → 把 CF 给出的两个 NS 填到注册商 → 等 zone `active`。
 
 ⚠️ 两个坑（AGENTS 记过）：
@@ -73,7 +73,7 @@ dashboard → Add a site → `petsuniverse.site`（账号 `70716e073f0925c564baf
 **zone active 后跑一条命令即可完成剩余全部**：
 
 ```bash
-bash scripts/wire-domain.sh petsuniverse.site
+bash scripts/wire-domain.sh kaijualpha.world
 # = 构建 → 部署 → 绑域名（workers_routes API）→ 验证 3 个 URL → 推 IndexNow
 ```
 
@@ -94,8 +94,8 @@ bash scripts/wire-domain.sh petsuniverse.site
 以下 dashboard 步骤留档备查（若 API 不可用时的退路）：
 
 1. https://dash.cloudflare.com/?to=/:account/workers-and-pages
-2. 建 Worker `petsuniverse`（或先 `npx wrangler deploy` 建一个空的）
-3. Settings → Builds → **Connect Git** → 选 `ken-fs/petsuniverse`
+2. 建 Worker `kaijualpha`（或先 `npx wrangler deploy` 建一个空的）
+3. Settings → Builds → **Connect Git** → 选 `ken-fs/kaijualpha`
 4. 构建配置：
 
 | 字段 | 值 |
@@ -109,7 +109,7 @@ bash scripts/wire-domain.sh petsuniverse.site
 
 | 变量 | 值 |
 |---|---|
-| `NEXT_PUBLIC_SITE_URL` | `https://petsuniverse.site` |
+| `NEXT_PUBLIC_SITE_URL` | `https://kaijualpha.world` |
 | `NEXT_PUBLIC_GA_ID` | ✅ **已设** `G-6SHF89BP9C`（2026-09-26，用 API 设进 trigger 环境变量）|
 
 ---
@@ -117,11 +117,11 @@ bash scripts/wire-domain.sh petsuniverse.site
 ## zone active 后我能自动跑的
 
 ```bash
-cd ~/Desktop/david/Ship/petsuniverse
-NEXT_PUBLIC_SITE_URL=https://petsuniverse.site npm run build
+cd ~/Desktop/david/Ship/kaijualpha
+NEXT_PUBLIC_SITE_URL=https://kaijualpha.world npm run build
 npx wrangler deploy
 node scripts/submit-indexnow.mjs          # IndexNow 推送
-node ~/Desktop/david/Ship/scripts/gsc.mjs index https://petsuniverse.site/   # Indexing API
+node ~/Desktop/david/Ship/scripts/gsc.mjs index https://kaijualpha.world/   # Indexing API
 ```
 
 绑定自定义域（wrangler 没有 domains 子命令，走 API）：
