@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { SiteNav } from "@/components/site-nav";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { WebsiteJsonLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/site";
 import { AnalyticsConsent } from "@/components/analytics-consent";
@@ -32,6 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Kaiju Alpha Guide",
+    images: [{ url: "/og.png", width: 768, height: 432, alt: "Kaiju Alpha — atomic-breath Godzilla key art" }],
   },
   robots: { index: true, follow: true },
 };
@@ -40,22 +40,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full`}
-      suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable} h-full dark`}
     >
-      <head>
-        {/*
-          Theme defaults to light rather than following the OS: this is a data
-          reference read in daylight, and the light ground is the one the
-          palette was contrast-checked against. A stored choice always wins, and
-          the script runs before paint so dark never flashes light.
-        */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem("pu-theme");document.documentElement.classList.toggle("dark",t==="dark")}catch(e){}})()`,
-          }}
-        />
-      </head>
+      <head>{/* Atomic-night dark theme is the only theme (kaiju key-art palette). */}</head>
       <body className="flex min-h-full flex-col antialiased">
         <WebsiteJsonLd name="Kaiju Alpha Guide" />
         <SiteNav />
@@ -75,8 +62,8 @@ function SiteFooter() {
           <div className="max-w-md">
             <p className="text-sm font-medium">Kaiju Alpha Guide</p>
             <p className="mt-2 text-sm text-muted-foreground">
-              An independent player reference. Not affiliated with Lip Builds or
-              Roblox Corporation. Game names and assets belong to their owners.
+              An independent player reference. Not affiliated with SULU KAKA or
+              Roblox Corporation. Kaiju names and game art belong to their owners.
             </p>
             <p className="mt-2 text-xs text-muted-foreground">
               Last source pass: {LAST_CHECKED}
@@ -90,7 +77,7 @@ function SiteFooter() {
               Kaiju
             </Link>
             <Link href="/evolutions/" className="text-muted-foreground hover:text-foreground">
-              Values
+              Evolutions
             </Link>
             <Link href="/tier-list/" className="text-muted-foreground hover:text-foreground">
               Tier list
@@ -103,11 +90,10 @@ function SiteFooter() {
             </Link>
           </nav>
         </div>
-        <div className="mt-8 flex items-center justify-between border-t rule pt-6">
+        <div className="mt-8 border-t rule pt-6">
           <p className="text-xs text-muted-foreground">
-            Values and odds are community-reported. Confirm in game before trading.
+            Community-reported data with sources attached. Confirm in game — this one patches almost daily.
           </p>
-          <ThemeToggle />
         </div>
       </div>
     </footer>

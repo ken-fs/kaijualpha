@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { kaiju, game, LAST_CHECKED } from "@/data/game";
 import { KaijuListJsonLd } from "@/components/json-ld";
 
@@ -23,11 +24,22 @@ export default function KaijuIndexPage() {
   return (
     <article className="mx-auto w-full max-w-6xl px-5">
       <KaijuListJsonLd kaiju={kaiju} />
-      <header className="pt-12 pb-10">
-        <p className="text-xs font-medium tracking-wide text-primary uppercase">
+      <div className="relative -mx-5 mb-8 overflow-hidden border-b rule">
+        <Image
+          src="/images/brand/screenshot-1.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/20" />
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-background to-transparent" />
+        <header className="relative px-5 pt-14 pb-10">
+        <p className="text-xs font-medium tracking-widest text-primary uppercase">
           Roster · updated {LAST_CHECKED}
         </p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+        <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
           The kaiju roster
         </h1>
         <p className="mt-4 max-w-[62ch] text-muted-foreground">
@@ -39,7 +51,8 @@ export default function KaijuIndexPage() {
           floor rather than a ceiling. Unconfirmed names stay listed because players
           search them — the flag tells you what to trust.
         </p>
-      </header>
+        </header>
+      </div>
 
       <div className="space-y-12 pb-16">
         {grouped.map(({ era, list }) => (
