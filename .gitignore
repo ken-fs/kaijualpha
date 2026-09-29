@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.production  # GA ID 是公开值（页面源码本就可见），进站接 GA 用
 
 # vercel
 .vercel
