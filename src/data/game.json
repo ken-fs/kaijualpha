@@ -6,16 +6,27 @@
     "universeId": 10732236937,
     "placeId": 127403135954624,
     "created": "2026-08-17",
-    "updated": "2026-09-28",
+    "updated": "2026-10-11",
     "currentUpdate": "Update 51 (Godzilla Ultima)",
-    "visits": 24497131,
+    "visits": 38840559,
     "favorites": 56404,
-    "ccu": 5960,
+    "ccu": 17799,
     "visitsPerFavourite": 434,
     "genre": "Kaiju PVP battlegrounds — collect, upgrade and fight as Godzilla-era monsters",
     "robloxUrl": "https://www.roblox.com/games/127403135954624/Kaiju-Alpha"
   },
   "kaiju": [
+    {
+      "name": "Godzilla In Hell",
+      "slug": "godzilla-in-hell",
+      "era": "original",
+      "source": "game description (Update 53, Oct 11 2026)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Update 53 (Halloween 2) addition, released Oct 11 2026. Based on the IDW \"Godzilla in Hell\" comic. Stats and price not yet frame-read — page renders gaps until creator footage is verified.",
+      "stats": null
+    },
     {
       "name": "Godzilla Ultima",
       "slug": "godzilla-ultima",
@@ -168,7 +179,7 @@
       "verified": true,
       "staleTier": "B",
       "stalePrice": null,
-      "note": "Named best beginner kaiju by Nerdious Momentos (qualifies: still slow)."
+      "note": "Named best beginner kaiju by Nerdious Momentos (qualifies: still slow). Update 53 (Oct 11): received a remodel."
     },
     {
       "name": "Biollante Rose Form",
@@ -178,7 +189,7 @@
       "verified": false,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Fandom lists Biollante; form split unconfirmed for current update."
+      "note": "Fandom lists Biollante; form split unconfirmed for current update. Update 53 remodel — form split needs re-verification against the new model."
     },
     {
       "name": "Kamata Kun",
@@ -268,7 +279,7 @@
       "verified": true,
       "staleTier": "B",
       "stalePrice": null,
-      "note": "Atomic breath crowd spam; Tycooner warns players hunt you for it."
+      "note": "Atomic breath crowd spam; Tycooner warns players hunt you for it. Update 53: A5 nerf (max dmg 300→290, burn 90, cooldown 26→32s)."
     },
     {
       "name": "Shin Godzilla",
@@ -328,7 +339,7 @@
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": "unknown",
-      "note": null
+      "note": "Update 53: HP buff (base 4625→4800, max 5655→5900)."
     },
     {
       "name": "Skar King",
