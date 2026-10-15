@@ -1,17 +1,17 @@
 {
-  "_note": "Source discipline: every kaiju carries its own provenance. verified=true means a current-era source (badge API / live Fandom page / named creator on camera) confirms it exists in-game NOW. Stale-tier fields (tier/price from kaijualpha.com's Update 24-39 era) are kept as historical reference with staleTier/stalePrice and must NOT be rendered as current meta. Roster scale: 53+ kaiju as of 2026-06-24 per Tycooner's all-kaiju template; badge API = 11 max-progression badges as of 2026-09-28. Codes: last cross-source pass pending — listed codes are single-source and flagged.",
+  "_note": "Source discipline: every kaiju carries its own provenance. verified=true means a current-era source (badge API / live Fandom page / named creator on camera) confirms it exists in-game NOW. Stale-tier fields (tier/price from kaijualpha.com's Update 24-39 era) are kept as historical reference with staleTier/stalePrice and must NOT be rendered as current meta. Roster scale: 53+ kaiju as of 2026-06-24 per Tycooner's all-kaiju template; badge API = 11 max-progression badges as of 2026-09-28. Codes: cross-source pass 2026-10-15 (Beebom / UrGameTips / GachaPocket + creator video) — 'active' needs 2 independent sources listing it as working; old kaijualpha.com codes stay single-source and flagged.",
   "game": {
     "name": "Kaiju Alpha",
     "developer": "SULU KAKA",
     "universeId": 10732236937,
     "placeId": 127403135954624,
     "created": "2026-08-17",
-    "updated": "2026-10-11",
-    "currentUpdate": "Update 51 (Godzilla Ultima)",
-    "visits": 38840559,
-    "favorites": 56404,
-    "ccu": 17799,
-    "visitsPerFavourite": 434,
+    "updated": "2026-10-14",
+    "currentUpdate": "Update 53 (Halloween 2)",
+    "visits": 42161276,
+    "favorites": 77359,
+    "ccu": 16065,
+    "visitsPerFavourite": 545,
     "genre": "Kaiju PVP battlegrounds — collect, upgrade and fight as Godzilla-era monsters",
     "robloxUrl": "https://www.roblox.com/games/127403135954624/Kaiju-Alpha"
   },
@@ -25,6 +25,39 @@
       "staleTier": null,
       "stalePrice": null,
       "note": "Update 53 (Halloween 2) addition, released Oct 11 2026. Based on the IDW \"Godzilla in Hell\" comic. Stats and price not yet frame-read — page renders gaps until creator footage is verified.",
+      "stats": null
+    },
+    {
+      "name": "Titanus Behemoth",
+      "slug": "titanus-behemoth",
+      "era": "Monsterverse",
+      "source": "game description (Update 53 balance notes, checked Oct 15 2026)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Got a big buff in Update 53. HP: base 5,000→5,300, max 5,800→6,400. Skills: A1 470→510, A2 490→520, A3 470→550, A4 300→350, A5 1,000→1,200. Price, cooldowns and full kit not published yet.",
+      "stats": null
+    },
+    {
+      "name": "Male MUTO",
+      "slug": "male-muto",
+      "era": "Monsterverse",
+      "source": "game description (Update 53 balance notes, checked Oct 15 2026)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Buffed in Update 53. HP: base 3,200→3,500, max 3,975→4,300. Every skill got +30 damage at base and max. Price and full kit not published yet.",
+      "stats": null
+    },
+    {
+      "name": "Female MUTO",
+      "slug": "female-muto",
+      "era": "Monsterverse",
+      "source": "game description (Update 53 balance notes, checked Oct 15 2026)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Buffed in Update 53. HP: base 3,970→4,200, max 4,980→5,300. Every skill got +20 damage at base and max. Not the same kaiju as Queen MUTO. Price and full kit not published yet.",
       "stats": null
     },
     {
@@ -554,11 +587,32 @@
   ],
   "codes": [
     {
+      "code": "1MILLIONMEMBERS",
+      "reward": "50 Levels, 5-hour Cell and EXP boost, 500k Cells",
+      "sources": 2,
+      "status": "active",
+      "note": "Update 53 code. Listed as working by UrGameTips (checked Oct 15) and GachaPocket. You must join the SULU OPPA group and play for 1 hour first. A creator video (NinjuGamerz, Oct 14) says it runs until Oct 16."
+    },
+    {
+      "code": "SrryForBugGuys",
+      "reward": "100 Tokens",
+      "sources": 2,
+      "status": "active",
+      "note": "Update 53 code. Listed as working by GachaPocket and read out in a creator video (NinjuGamerz, Oct 14), which says play 1 hour first and it ends Oct 16. Beebom (Oct 14) lists it as expired, so it may already be gone."
+    },
+    {
+      "code": "BadSonglee",
+      "reward": "2-hour EXP boost",
+      "sources": 2,
+      "status": "active",
+      "note": "Listed as working by UrGameTips (checked Oct 15) and GachaPocket. Beebom (Oct 14) lists it as expired, so try it soon."
+    },
+    {
       "code": "Singularity",
       "reward": "100,000 Coins",
       "sources": 2,
       "status": "active",
-      "note": "Update 51 code. Two independent creators redeemed on camera (BMaX Rohaan + Blazze Stars videos, Sep 2026); system message 'has received 100000Coin' visible both times. Verify in game — codes rotate."
+      "note": "Update 51 code. Two independent creators redeemed on camera (BMaX Rohaan + Blazze Stars videos, Sep 2026); system message 'has received 100000Coin' visible both times. Still listed as working by UrGameTips and GachaPocket (Oct 15); Beebom lists it as expired."
     },
     {
       "code": "SORRYFORLAG",
@@ -649,6 +703,8 @@
     "Unlock prices for most kaiju: only 3 prices were ever creator-confirmed (stale era)",
     "Evolution requirements per kaiju: nobody has published a verified text table",
     "Monster Zero skull count: appears only in AI-generated wikis, unverified",
+    "Skeleton Godzilla 1954: Update 53 notes say its quest was fixed, but nobody has published the quest steps or confirmed whether it's a separate kaiju or a Gojira 1954 skin",
+    "Code 'Rose': UrGameTips lists 'Rose' (60M Cells + 60M XP), GachaPocket lists 'ROSE' (two 60-min XP and Cell boosts), Beebom lists 'Rose' as expired — spelling and reward disagree, so it's not on the codes list",
     "Roster completeness: Tycooner's template held 53 kaiju as of 2026-06-24; current count likely 60+ but unverified"
   ]
 }

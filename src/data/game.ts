@@ -64,7 +64,7 @@ export const verifiedKaiju = kaiju.filter((k) => k.verified);
 /** Stale-era tier entries — rendered only as historical reference. */
 export const staleTiered = kaiju.filter((k) => k.staleTier);
 
-export const LAST_CHECKED = "2026-09-28";
+export const LAST_CHECKED = "2026-10-15";
 
 /**
  * Visits per favourite — the retention proxy from the site fleet playbook.
