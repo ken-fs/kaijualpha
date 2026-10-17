@@ -1,30 +1,52 @@
 {
-  "_note": "Source discipline: every kaiju carries its own provenance. verified=true means a current-era source (badge API / live Fandom page / named creator on camera) confirms it exists in-game NOW. Stale-tier fields (tier/price from kaijualpha.com's Update 24-39 era) are kept as historical reference with staleTier/stalePrice and must NOT be rendered as current meta. Roster scale: 53+ kaiju as of 2026-06-24 per Tycooner's all-kaiju template; badge API = 11 max-progression badges as of 2026-09-28. Codes: cross-source pass 2026-10-15 (Beebom / UrGameTips / GachaPocket + creator video) — 'active' needs 2 independent sources listing it as working; old kaijualpha.com codes stay single-source and flagged.",
+  "_note": "Source discipline: every kaiju carries its own provenance. verified=true means a current-era source (badge API / live Fandom page / named creator on camera) confirms it exists in-game NOW. Stale-tier fields (tier/price from kaijualpha.com's Update 24-39 era) are kept as historical reference with staleTier/stalePrice and must NOT be rendered as current meta. Roster scale: 53+ kaiju as of 2026-06-24 per Tycooner's all-kaiju template; badge API = 11 max-progression badges as of 2026-09-28. Codes: cross-source pass 2026-10-17 (Beebom / UrGameTips / GachaPocket + creator videos) — 'active' needs 2 independent sources listing it as working; old kaijualpha.com codes stay single-source and flagged.",
   "game": {
     "name": "Kaiju Alpha",
     "developer": "SULU KAKA",
     "universeId": 10732236937,
     "placeId": 127403135954624,
     "created": "2026-08-17",
-    "updated": "2026-10-14",
-    "currentUpdate": "Update 53 (Halloween 2)",
-    "visits": 42161276,
-    "favorites": 77359,
-    "ccu": 16065,
-    "visitsPerFavourite": 545,
+    "updated": "2026-10-17",
+    "currentUpdate": "Update 54 (Heisei Mothra)",
+    "visits": 44524757,
+    "favorites": 79810,
+    "ccu": 20024,
+    "visitsPerFavourite": 558,
     "genre": "Kaiju PVP battlegrounds — collect, upgrade and fight as Godzilla-era monsters",
     "robloxUrl": "https://www.roblox.com/games/127403135954624/Kaiju-Alpha"
   },
   "kaiju": [
     {
-      "name": "Godzilla In Hell",
-      "slug": "godzilla-in-hell",
-      "era": "original",
-      "source": "game description (Update 53, Oct 11 2026)",
+      "name": "Heisei Mothra",
+      "slug": "heisei-mothra",
+      "era": "Heisei",
+      "source": "game description (Update 54, checked Oct 17 2026) + creator showcase videos (FalconeerX, Silent, Nostalgia81, Oct 16 2026)",
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Update 53 (Halloween 2) addition, released Oct 11 2026. Based on the IDW \"Godzilla in Hell\" comic. Stats and price not yet frame-read — page renders gaps until creator footage is verified.",
+      "note": "Update 54 addition, live by Oct 16 2026. The patch notes say it's a new Heisei-era Mothra, and that the Mothra removed earlier was the Showa one. Price, unlock path and stats aren't published in text yet.",
+      "stats": null
+    },
+    {
+      "name": "Heisei Mothra Larva",
+      "slug": "heisei-mothra-larva",
+      "era": "Heisei",
+      "source": "game description (Update 54, checked Oct 17 2026) + creator showcase videos (FalconeerX, Silent, Oct 16 2026)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Update 54 addition, added next to Heisei Mothra. Whether the larva evolves into Heisei Mothra isn't confirmed by any text source yet. Price and stats not published.",
+      "stats": null
+    },
+    {
+      "name": "Godzilla In Hell",
+      "slug": "godzilla-in-hell",
+      "era": "original",
+      "source": "game description (Update 53, Oct 11 2026; Update 54 balance notes, checked Oct 17 2026)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Update 53 (Halloween 2) addition, released Oct 11 2026. Based on the IDW \"Godzilla in Hell\" comic. Nerfed in Update 54: A1 max damage 690→640, A2 980→900, A5 400→385, A3 Special 300→200, Immortal Apocalypse 2→1. One buff: A5 Special (Devil Bat Power) 350→450. Price and full stat panel not frame-read yet.",
       "stats": null
     },
     {
@@ -539,20 +561,20 @@
       "slug": "mothra-imago-1964",
       "era": "Showa",
       "source": "Fandom page",
-      "verified": true,
+      "verified": false,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Adult form; larva↔imago progression likely, confirm in-game."
+      "note": "Adult form; larva↔imago progression likely, confirm in-game. Update 54 notes (Oct 2026) say 'the removed Mothra was Showa', so this 1964 Mothra may no longer be in the game. Unconfirmed until someone shows it in the current build."
     },
     {
       "name": "Showa Mothra",
       "slug": "showa-mothra",
       "era": "Showa",
-      "source": "Fandom page",
-      "verified": true,
+      "source": "Fandom page + game description (Update 54 note, checked Oct 17 2026)",
+      "verified": false,
       "staleTier": null,
       "stalePrice": null,
-      "note": null
+      "note": "Update 54 notes say 'the removed Mothra was Showa, not Heisei', so the Showa Mothra looks removed from the game. Heisei Mothra is the new one. Kept here for reference until the dev confirms."
     },
     {
       "name": "Tank",
@@ -587,32 +609,39 @@
   ],
   "codes": [
     {
+      "code": "NOLIMITTOTHELARVA",
+      "reward": "20 Levels",
+      "sources": 2,
+      "status": "active",
+      "note": "Update 54 code. Listed as working by GachaPocket (Oct 17) and redeemed on camera by Berlian kecil (Oct 16). You need to play 30 minutes after joining first (GachaPocket, BMaX Rohaan video); Berlian kecil also says you must be level 20."
+    },
+    {
       "code": "1MILLIONMEMBERS",
       "reward": "50 Levels, 5-hour Cell and EXP boost, 500k Cells",
       "sources": 2,
       "status": "active",
-      "note": "Update 53 code. Listed as working by UrGameTips (checked Oct 15) and GachaPocket. You must join the SULU OPPA group and play for 1 hour first. A creator video (NinjuGamerz, Oct 14) says it runs until Oct 16."
+      "note": "Update 53 code. Still listed as working by UrGameTips (checked Oct 16) and GachaPocket (Oct 17). You must join the SULU OPPA group and play for 1 hour first. A creator video (NinjuGamerz, Oct 14) said it runs until Oct 16, so it may stop any time."
     },
     {
       "code": "SrryForBugGuys",
       "reward": "100 Tokens",
       "sources": 2,
-      "status": "active",
-      "note": "Update 53 code. Listed as working by GachaPocket and read out in a creator video (NinjuGamerz, Oct 14), which says play 1 hour first and it ends Oct 16. Beebom (Oct 14) lists it as expired, so it may already be gone."
+      "status": "expired-risk",
+      "note": "Update 53 code, now likely expired. Beebom (Oct 14) lists it as expired, and a creator (Yashj Play, Oct 16) typed it on camera and got 'invalid'. GachaPocket still lists it as working."
     },
     {
       "code": "BadSonglee",
       "reward": "2-hour EXP boost",
       "sources": 2,
       "status": "active",
-      "note": "Listed as working by UrGameTips (checked Oct 15) and GachaPocket. Beebom (Oct 14) lists it as expired, so try it soon."
+      "note": "Listed as working by UrGameTips (checked Oct 16) and GachaPocket (Oct 17). Beebom (Oct 14) lists it as expired, so try it soon."
     },
     {
       "code": "Singularity",
       "reward": "100,000 Coins",
       "sources": 2,
       "status": "active",
-      "note": "Update 51 code. Two independent creators redeemed on camera (BMaX Rohaan + Blazze Stars videos, Sep 2026); system message 'has received 100000Coin' visible both times. Still listed as working by UrGameTips and GachaPocket (Oct 15); Beebom lists it as expired."
+      "note": "Update 51 code. Two independent creators redeemed on camera (BMaX Rohaan + Blazze Stars videos, Sep 2026); system message 'has received 100000Coin' visible both times. Still listed as working by UrGameTips (Oct 16) and GachaPocket (Oct 17); Beebom lists it as expired."
     },
     {
       "code": "SORRYFORLAG",
@@ -705,6 +734,9 @@
     "Monster Zero skull count: appears only in AI-generated wikis, unverified",
     "Skeleton Godzilla 1954: Update 53 notes say its quest was fixed, but nobody has published the quest steps or confirmed whether it's a separate kaiju or a Gojira 1954 skin",
     "Code 'Rose': UrGameTips lists 'Rose' (60M Cells + 60M XP), GachaPocket lists 'ROSE' (two 60-min XP and Cell boosts), Beebom lists 'Rose' as expired — spelling and reward disagree, so it's not on the codes list",
+    "Code 'Reward': UrGameTips (Oct 16) lists it as working (2 hours of XP and Cell boosts), GachaPocket (Oct 17) lists it as expired — sources disagree, so it's not on the codes list",
+    "Heisei Mothra / Heisei Mothra Larva (Update 54): price, unlock path, stats and whether the larva evolves into the adult are all unpublished in text; showcase videos exist but nobody has frame-read the stat panel",
+    "Showa Mothra: Update 54 notes call it 'the removed Mothra' — nobody has said whether it's gone for good or what happened to players who owned it",
     "Roster completeness: Tycooner's template held 53 kaiju as of 2026-06-24; current count likely 60+ but unverified"
   ]
 }
