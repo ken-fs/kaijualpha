@@ -3,9 +3,9 @@ import Link from "next/link";
 import { game, gaps, LAST_CHECKED } from "@/data/game";
 
 export const metadata: Metadata = {
-  title: "About this Kaiju Alpha reference — sources, method, and gaps",
+  title: "About This Kaiju Alpha Reference — Sources & Method",
   description:
-    "How this site verifies Kaiju Alpha information: what counts as a source, why stale data is published with its age on it, and the list of things nobody has published yet.",
+    "How this site verifies Kaiju Alpha information: what counts as a source, why stale data is published with its age on it, and what nobody has published yet.",
   alternates: { canonical: "/about/" },
 };
 

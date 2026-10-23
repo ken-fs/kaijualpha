@@ -27,12 +27,14 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  // 2026-10-23：模板不再追加 "| Kaiju Alpha Guide"。每个页面标题里本来就有 "Kaiju Alpha"，
+  // 这个 20 字符的尾巴把全站标题顶到 66–108 字符，SERP 全部截断、游戏名出现两次。
   title: {
-    default: "Kaiju Alpha codes, every playable kaiju, and the evolution lines nobody has written down",
-    template: "%s | Kaiju Alpha Guide",
+    default: "Kaiju Alpha (Roblox) — Codes, Kaiju Roster & Evolutions",
+    template: "%s",
   },
   description:
-    "Every Kaiju Alpha code we could verify, the full playable kaiju roster with named sources, evolution and unlock requirements, and an honest map of what is still unpublished. Fan-made, no invented numbers.",
+    "Kaiju Alpha (Roblox) — codes with their verification status, the full kaiju roster by era, evolution lines and unlock requirements. Sourced, no invented numbers.",
   openGraph: {
     type: "website",
     siteName: "Kaiju Alpha Guide",

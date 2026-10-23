@@ -7,7 +7,7 @@ import { KaijuListJsonLd } from "@/components/json-ld";
 export const metadata: Metadata = {
   title: `Every playable kaiju in ${game.name} (${kaiju.length} tracked)`,
   description:
-    "The Kaiju Alpha kaiju roster: every monster we could confirm in the current build, grouped by era, with its source and the historical tier where one was ever published. Names without a current source are flagged, not hidden.",
+    "Every kaiju confirmed in the current Kaiju Alpha build, grouped by era — each with its source and last published tier. Unconfirmed names are flagged, not hidden.",
   alternates: { canonical: "/kaiju/" },
 };
 

@@ -8,7 +8,7 @@ import { LEADERBOARD } from "@/lib/ads";
 export const metadata: Metadata = {
   title: "Kaiju Alpha codes — every code and its verification status",
   description:
-    "Kaiju Alpha codes with an honest status on each: unconfirmed, expired-risk, or corroborated. Nothing is listed as working until two independent sources agree. Redeem steps and where codes actually come from.",
+    "Every Kaiju Alpha code with an honest status: unconfirmed, expired-risk or corroborated. Nothing is listed as working until two independent sources agree.",
   alternates: { canonical: "/codes/" },
 };
 

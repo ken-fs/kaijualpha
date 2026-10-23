@@ -13,16 +13,46 @@ export async function generateMetadata({
   const { slug } = await params;
   const k = kaiju.find((x) => x.slug === slug);
   if (!k) return {};
-  const title = k.verified
-    ? `${k.name} in Kaiju Alpha: era, unlock status and historical tier`
-    : `${k.name} in Kaiju Alpha: unconfirmed for the current build`;
+  // 2026-10-23 改标题/描述口径（GSC：曝光 +4%、位次没掉、点击 -34%、CTR 3.19%→2.00%）：
+  //   1. 旧标题 `${name} in Kaiju Alpha: era, unlock status and historical tier` 68 字符，
+  //      再被 layout 模板追加 "| Kaiju Alpha Guide" = 88 字符，SERP 全截断。
+  //   2. 旧描述是一句话模板换名字，40 个页面同一句，SERP 摘要没有区分度。
+  // 现在：标题 ≤60 且实体名打头（同时点明 Roblox，把电影词的无意图曝光让出去），
+  // 描述取该实体自己的 note 首句（真实变更记录），不再共用模板。
+  const brand = "Kaiju Alpha (Roblox)";
+  const hooked = `${k.name} — ${brand}: Tier & Unlock`;
+  const title = hooked.length <= 60 ? hooked : `${k.name} in ${brand}`;
+
+  const era = k.era.charAt(0).toUpperCase() + k.era.slice(1);
+  const lead = firstSentence(k.note ?? "");
+  const tierBit = k.staleTier ? ` Last published tier: ${k.staleTier}.` : "";
+  const description = clampMeta(
+    k.verified
+      ? `${k.name} is a playable ${era}-era kaiju in ${brand}.${lead ? ` ${lead}` : ""}${tierBit}`
+      : `${k.name} is in the Kaiju Alpha record but no current source confirms it in the live build.${lead ? ` ${lead}` : ""}`,
+  );
+
   return {
     title,
-    description: k.verified
-      ? `${k.name} (${k.era} era) is a playable kaiju in Kaiju Alpha. What is confirmed today, what the last published tier list said — with its age printed on it — and what nobody has published.`
-      : `${k.name} appears in the Kaiju Alpha record but no current source confirms it in the Update 51 build. Here is what that means and how to check in game.`,
+    description,
     alternates: { canonical: `/kaiju/${k.slug}/` },
   };
+}
+
+/** note 的第一句（实体自己的真实记录，用来生成不重复的 SERP 摘要）。 */
+function firstSentence(text: string): string {
+  const t = text.trim();
+  if (!t) return "";
+  const m = t.match(/^[^.!?]*[.!?]/);
+  return (m ? m[0] : t).trim();
+}
+
+/** SERP 摘要大约 155 字符，超了按词截断加省略号。 */
+function clampMeta(text: string, max = 155): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  const space = cut.lastIndexOf(" ");
+  return `${space > max * 0.6 ? cut.slice(0, space) : cut}…`;
 }
 
 export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) {

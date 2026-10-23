@@ -8,9 +8,9 @@ import { AdsterraBanner } from "@/components/adsterra-banner";
 import { LEADERBOARD, RECTANGLE } from "@/lib/ads";
 
 export const metadata: Metadata = {
-  title: "Kaiju Alpha codes, every playable kaiju, and evolution requirements",
+  title: "Kaiju Alpha (Roblox) — Codes, Kaiju Roster & Evolutions",
   description:
-    "Every Kaiju Alpha code we could verify, the full playable kaiju roster with named sources, evolution and unlock requirements, and an honest map of what is still unpublished. Fan-made, with the source for every claim.",
+    "Kaiju Alpha (Roblox): verified codes, the full kaiju roster with named sources, evolution and unlock requirements, and what is still unpublished.",
   alternates: { canonical: "/" },
 };
 

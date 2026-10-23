@@ -5,7 +5,7 @@ import { kaiju, game, LAST_CHECKED } from "@/data/game";
 export const metadata: Metadata = {
   title: "Kaiju Alpha evolutions and unlock requirements",
   description:
-    "Confirmed evolution lines and unlock requirements in Kaiju Alpha: Destoroyah's form chain, Mothra's larva-to-imago line, Monster Zero's skull-collection objective. Every unverified requirement is marked, not guessed.",
+    "Confirmed Kaiju Alpha evolution lines and unlocks: Destoroyah's form chain, Mothra's larva-to-imago line, Monster Zero's skull-collection objective.",
   alternates: { canonical: "/evolutions/" },
 };
 

@@ -5,9 +5,9 @@ import { AdsterraBanner } from "@/components/adsterra-banner";
 import { LEADERBOARD } from "@/lib/ads";
 
 export const metadata: Metadata = {
-  title: "Kaiju Alpha beginner guide — the G-cell economy and first kaiju",
+  title: "Kaiju Alpha Beginner Guide — G-Cells & First Kaiju",
   description:
-    "How Kaiju Alpha actually works: G-cells pay on damage so reach beats kills, endgame kaiju cost 200K-500K cells, and the first kaiju worth buying is Biollante. Routes from named creators' recorded play, dated and sourced.",
+    "How Kaiju Alpha works: G-cells pay on damage, so reach beats kills. Endgame kaiju cost 200K–500K cells and the first buy worth making is Biollante.",
   alternates: { canonical: "/guide/" },
 };
 

@@ -3,9 +3,9 @@ import Link from "next/link";
 import { kaiju, game, staleTiered, LAST_CHECKED } from "@/data/game";
 
 export const metadata: Metadata = {
-  title: "Kaiju Alpha tier list — the last published meta, dated and sourced",
+  title: "Kaiju Alpha Tier List — Dated & Sourced Meta",
   description:
-    "The only text tier list ever published for Kaiju Alpha stopped at Update 24-39. We republish it as history: every placement attributed to the named creator who made it, every price dated, and the post-Update-40 meta marked as unverified.",
+    "The only published Kaiju Alpha tier list stopped at Update 24–39. We republish it as history — every placement attributed, every price dated, later meta unverified.",
   alternates: { canonical: "/tier-list/" },
 };
 
