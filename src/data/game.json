@@ -374,7 +374,7 @@
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": null,
-      "note": null
+      "note": "Godzilla Aquatilis is the sea-going form from the anime Godzilla Singular Point, and it is on the roster here. The only source that lists it is the old kaijualpha.com list, where it was unranked. Its price, unlock path, stats and rarity are not published anywhere we can check, so we show none. Check the in-game index before you spend on it."
     },
     {
       "name": "King Ghidorah",
@@ -554,7 +554,7 @@
       "verified": true,
       "staleTier": "C (group)",
       "stalePrice": null,
-      "note": null
+      "note": "Searching for Kaiju Alpha Mothra? Read the Showa Mothra page: Update 54 notes say the removed Mothra was the Showa one, and Heisei Mothra is the new one. This 1964 larva page only covers the old larva entry and may be stale too."
     },
     {
       "name": "Mothra Imago 1964",
@@ -737,6 +737,7 @@
     "Code 'Reward': UrGameTips (Oct 16) lists it as working (2 hours of XP and Cell boosts), GachaPocket (Oct 17) lists it as expired — sources disagree, so it's not on the codes list",
     "Heisei Mothra / Heisei Mothra Larva (Update 54): price, unlock path, stats and whether the larva evolves into the adult are all unpublished in text; showcase videos exist but nobody has frame-read the stat panel",
     "Showa Mothra: Update 54 notes call it 'the removed Mothra' — nobody has said whether it's gone for good or what happened to players who owned it",
+    "Godzilla Aquatilis: listed on the roster, but no source gives its price, unlock path, stats or rarity",
     "Roster completeness: Tycooner's template held 53 kaiju as of 2026-06-24; current count likely 60+ but unverified"
   ]
 }
