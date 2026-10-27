@@ -220,11 +220,11 @@
       "name": "Heisei Godzilla",
       "slug": "heisei-godzilla",
       "era": "Heisei",
-      "source": "badge API + Fandom page + kaijualpha.com",
+      "source": "badge API (Max Heisei Godzilla & Burning Godzilla) + kaijualpha.com",
       "verified": true,
       "staleTier": "B",
       "stalePrice": null,
-      "note": "Cell-farming pick: pulse + twin beams snipe crowds from range; assists pay full cells."
+      "note": "Cell-farming pick: pulse + twin beams snipe crowds from range; assists pay full cells. The official badge list includes Max Heisei Godzilla & Burning Godzilla, confirming a max-progression track. Current price, unlock requirements and full stats are still unpublished; the historical B tier is not a current-update verdict."
     },
     {
       "name": "Biollante",
@@ -344,17 +344,17 @@
       "verified": true,
       "staleTier": "B",
       "stalePrice": null,
-      "note": "Back beam + tail beam angle coverage."
+      "note": "Back beam + tail beam angle coverage. Compared with Heisei Godzilla's crowd-farming role, Shin's record is about covering angles rather than a confirmed farming route. Current price, unlock requirements and full stats are not published; the historical B tier is not a current-update verdict."
     },
     {
       "name": "Final Wars Godzilla",
       "slug": "final-wars-godzilla",
       "era": "Final Wars",
-      "source": "kaijualpha.com unranked block (official record)",
+      "source": "kaijualpha.com unranked block + archived official place name (2026-07-15)",
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": null,
-      "note": null
+      "note": "Final Wars Godzilla was live by 2026-07-15, when the official place name referenced it. kaijualpha.com calls Update 38 the likely addition, not a confirmed patch number. Stats and unlock cost remain undocumented. Its unranked block means no reliable ranking was published, not that the kaiju is weak."
     },
     {
       "name": "Godzilla Minus One",
@@ -480,11 +480,11 @@
       "name": "Mechagodzilla 1974",
       "slug": "mechagodzilla-1974",
       "era": "Showa",
-      "source": "Fandom page",
-      "verified": true,
+      "source": "older roster record; previously cited Fandom page is unavailable",
+      "verified": false,
       "staleTier": null,
       "stalePrice": null,
-      "note": null
+      "note": "Mechagodzilla 1974 remains in the roster record, but the Fandom page previously used as evidence is unavailable and no current source confirms it in the live build. Do not borrow the Kiryu or Mechagodzilla unlock grind for this form: its own price, unlock path and stats are unconfirmed."
     },
     {
       "name": "Jet Jaguar 1973",

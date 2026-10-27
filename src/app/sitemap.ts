@@ -1,10 +1,10 @@
 import type { MetadataRoute } from "next";
-import { kaiju } from "@/data/game";
+import { kaiju, LAST_CHECKED } from "@/data/game";
 
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const lastModified = new Date(`${LAST_CHECKED}T00:00:00Z`);
 
   const staticRoutes: { path: string; priority: number; freq: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
     { path: "/", priority: 1, freq: "daily" },
@@ -19,13 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes.map((r) => ({
       url: SITE_URL + r.path,
-      lastModified: now,
+      lastModified,
       changeFrequency: r.freq,
       priority: r.priority,
     })),
     ...kaiju.map((k) => ({
       url: `${SITE_URL}/kaiju/${k.slug}/`,
-      lastModified: now,
+      lastModified,
       changeFrequency: "weekly" as const,
       priority: 0.6,
     })),

@@ -11,10 +11,13 @@ export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-    // Reads the class the head script already applied, so the button never
-    // disagrees with the painted page.
-    setDark(document.documentElement.classList.contains("dark"));
+    const timer = setTimeout(() => {
+      setMounted(true);
+      // Reads the class the head script already applied, so the button never
+      // disagrees with the painted page.
+      setDark(document.documentElement.classList.contains("dark"));
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   function toggle() {
