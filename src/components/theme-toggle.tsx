@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Moon, Sun } from "@phosphor-icons/react/dist/ssr";
+import { Moon, Sun } from "@phosphor-icons/react/dist/ssr/index";
 import { Button } from "@/components/ui/button";
 
 const KEY = "pu-theme";
