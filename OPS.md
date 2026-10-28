@@ -24,7 +24,7 @@
 | 技术栈 | Next.js 16 App Router · Tailwind v4 · shadcn/ui(radix) · Geist · Phosphor · `output: export` |
 | GA4 | `G-6SHF89BP9C`（**同意门控**，走 `NEXT_PUBLIC_GA_ID` 构建变量） |
 | GSC | `sc-domain:kaijualpha.world`（TXT 验证 + 服务账号 Owner，2026-09-26） |
-| IndexNow | key `8c886f4e6e3aaa6a44f194de32eec4e7` |
+| IndexNow | key `be6df5095c26e26eead7006c4789e7ac`（`public/<key>.txt`；提交用 `node scripts/submit-indexnow.mjs`） |
 | 广告 | Adsterra：728×90 `13f5f745…` · 300×250 `64d70ba5…`（host `bauval.org`） |
 | 每日巡检 | `scripts/site-hygiene.mjs` 的 MANUAL_SITES（部署标记/sitemap/关键页） |
 
