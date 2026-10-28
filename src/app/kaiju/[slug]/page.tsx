@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { kaiju, game, type Kaiju } from "@/data/game";
+import { kaiju, game, type Kaiju, type Unlock } from "@/data/game";
 
 export function generateStaticParams() {
   return kaiju.map((k) => ({ slug: k.slug }));
@@ -19,17 +19,22 @@ export async function generateMetadata({
   //   2. 旧描述是一句话模板换名字，40 个页面同一句，SERP 摘要没有区分度。
   // 现在：标题 ≤60 且实体名打头（同时点明 Roblox，把电影词的无意图曝光让出去），
   // 描述取该实体自己的 note 首句（真实变更记录），不再共用模板。
+  // 2026-10-28 再改（GSC 28 天：「how to get X / X requirements」类词几乎 0 点击，
+  // 摘要写的是「no published unlock requirements yet」，竞品摘要直接给价格）：
+  // 有解锁数据的页标题改成 How to Get，放得下就把价格写进标题；描述 = 一句话答案。
   const brand = "Kaiju Alpha (Roblox)";
   const hooked = `${k.name} — ${brand}: Tier & Unlock`;
-  const title = hooked.length <= 60 ? hooked : `${k.name} in ${brand}`;
+  const title = k.unlock?.cost ? howToGetTitle(k.name, k.unlock.cost) : hooked.length <= 60 ? hooked : `${k.name} in ${brand}`;
 
   const era = k.era.charAt(0).toUpperCase() + k.era.slice(1);
   const lead = firstSentence(k.note ?? "");
   const tierBit = k.staleTier ? ` Last published tier: ${k.staleTier}.` : "";
   const description = clampMeta(
-    k.verified
-      ? `${k.name} is a playable ${era}-era kaiju in ${brand}.${lead ? ` ${lead}` : ""}${tierBit}`
-      : `${k.name} is in the Kaiju Alpha record but no current source confirms it in the live build.${lead ? ` ${lead}` : ""}`,
+    k.unlock
+      ? k.unlock.answer
+      : k.verified
+        ? `${k.name} is a playable ${era}-era kaiju in ${brand}.${lead ? ` ${lead}` : ""}${tierBit}`
+        : `${k.name} is in the Kaiju Alpha record but no current source confirms it in the live build.${lead ? ` ${lead}` : ""}`,
   );
 
   return {
@@ -37,6 +42,15 @@ export async function generateMetadata({
     description,
     alternates: { canonical: `/kaiju/${k.slug}/` },
   };
+}
+
+/** 「How to Get X in Kaiju Alpha」，60 字符内放得下就带上价格，否则带 (Roblox)，再不行只留主体。 */
+function howToGetTitle(name: string, cost: string): string {
+  const base = `How to Get ${name} in Kaiju Alpha`;
+  const priced = `${base} (${cost})`;
+  if (priced.length <= 60) return priced;
+  const roblox = `${base} (Roblox)`;
+  return roblox.length <= 60 ? roblox : base;
 }
 
 /** note 的第一句（实体自己的真实记录，用来生成不重复的 SERP 摘要）。 */
@@ -82,6 +96,7 @@ export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) 
         <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
           {k.name}
         </h1>
+        {k.unlock && <UnlockAnswer k={k} unlock={k.unlock} />}
         <p className="mt-4 max-w-[62ch] text-muted-foreground">
           {k.verified ? (
             <>
@@ -146,7 +161,7 @@ export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) 
             </div>
           )}
 
-          {k.stalePrice && (
+          {k.stalePrice && !k.unlock?.cost && (
             <div className="mt-8 rounded-[var(--radius-container)] border rule bg-card p-5">
               <h2 className="text-sm font-medium">Unlock cost — historical</h2>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -183,9 +198,11 @@ export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) 
             <h2 className="text-sm font-medium">Unlocking and evolving</h2>
             <p className="mt-2 text-sm text-muted-foreground">
               {k.name}
-              {k.stalePrice
-                ? " has a published unlock path (left), and possibly an evolution line — "
-                : " has no published unlock requirements yet. "}
+              {k.unlock
+                ? "'s unlock path is at the top of this page. Other "
+                : k.stalePrice
+                  ? " has a published unlock path (left), and possibly an evolution line — "
+                  : " has no published unlock requirements yet. "}
               confirmed objective unlocks and the known evolution lines live on the{" "}
               <Link href="/evolutions/" className="text-primary underline-offset-4 hover:underline">
                 evolutions page
@@ -227,6 +244,53 @@ export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) 
         </aside>
       </div>
     </article>
+  );
+}
+
+function UnlockAnswer({ k, unlock }: { k: Kaiju; unlock: Unlock }) {
+  return (
+    <section
+      aria-labelledby="how-to-get"
+      className="mt-6 max-w-[62ch] rounded-[var(--radius-container)] border border-primary/30 bg-card p-5"
+    >
+      <h2 id="how-to-get" className="text-sm font-medium">
+        How to get {k.name}
+      </h2>
+      <p className="mt-2 text-foreground">{unlock.answer}</p>
+      {(unlock.cost || unlock.requires.length > 0) && (
+        <dl className="mt-4 grid gap-px overflow-hidden rounded-[var(--radius-container)] border rule bg-border sm:grid-cols-[auto_1fr]">
+          {unlock.cost && <Stat label="Cost" value={unlock.cost} />}
+          {unlock.requires.length > 0 && (
+            <div className="bg-card p-4">
+              <dt className="text-xs text-muted-foreground">Requirements</dt>
+              <dd className="mt-1">
+                <ul className="list-disc space-y-1 pl-4 text-sm">
+                  {unlock.requires.map((r) => (
+                    <li key={r}>{r}</li>
+                  ))}
+                </ul>
+              </dd>
+            </div>
+          )}
+        </dl>
+      )}
+      {unlock.conflict && (
+        <p className="mt-4 text-sm text-muted-foreground">
+          <strong className="font-medium text-foreground">Sources disagree.</strong> {unlock.conflict}
+        </p>
+      )}
+      <h3 className="mt-4 text-xs font-medium text-muted-foreground">Where the numbers come from</h3>
+      <ul className="mt-1 space-y-1 text-xs text-muted-foreground">
+        {unlock.sources.map((s) => (
+          <li key={`${s.from}|${s.says}`}>
+            {s.from} ({s.date}): “{s.says}”
+          </li>
+        ))}
+      </ul>
+      <p className="mt-3 text-xs text-muted-foreground">
+        Prices move between updates. The shop card in the game is the final word.
+      </p>
+    </section>
   );
 }
 

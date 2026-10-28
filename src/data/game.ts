@@ -30,6 +30,21 @@ export type KaijuStats = {
   gauge: string;
   source: string;
 };
+export type UnlockSource = { from: string; date: string; says: string };
+/**
+ * How to get a kaiju — every claim dated and attributed.
+ * 2026-10-28: Fandom price table (2026-10-21) + kaijualpha.net table (2026-08-30).
+ * Where they disagree both are listed and `conflict` says which is newer.
+ * kaijualpha.com is not a source here (its unlock table lists kaiju that don't exist).
+ */
+export type Unlock = {
+  /** One-sentence answer: leads the page and is the meta description. */
+  answer: string;
+  cost: string | null;
+  requires: string[];
+  sources: UnlockSource[];
+  conflict: string | null;
+};
 export type Kaiju = {
   name: string;
   slug: string;
@@ -41,6 +56,7 @@ export type Kaiju = {
   note: string | null;
   /** Frame-read in-game stats (only present where creator footage showed the panel). */
   stats?: KaijuStats;
+  unlock?: Unlock;
 };
 
 export type Code = {
@@ -64,7 +80,7 @@ export const verifiedKaiju = kaiju.filter((k) => k.verified);
 /** Stale-era tier entries — rendered only as historical reference. */
 export const staleTiered = kaiju.filter((k) => k.staleTier);
 
-export const LAST_CHECKED = "2026-10-27";
+export const LAST_CHECKED = "2026-10-28";
 
 /**
  * Visits per favourite — the retention proxy from the site fleet playbook.

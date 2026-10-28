@@ -24,8 +24,23 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Update 54 addition, live by Oct 16 2026. The patch notes say it's a new Heisei-era Mothra, and that the Mothra removed earlier was the Showa one. Price, unlock path and stats aren't published in text yet.",
-      "stats": null
+      "note": "Update 54 addition, live by Oct 16 2026. The patch notes say it's a new Heisei-era Mothra, and that the Mothra removed earlier was the Showa one. Stats aren't published in text yet. The unlock above comes from the Fandom price table.",
+      "stats": null,
+      "unlock": {
+        "answer": "Heisei Mothra costs 80,000 Cells and needs Heisei Mothra Larva at level 50 first.",
+        "cost": "80,000 Cells",
+        "requires": [
+          "Heisei Mothra Larva at level 50"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "80k Cells, Level 50 Heisei Mothra Larva"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Heisei Mothra Larva",
@@ -35,8 +50,21 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Update 54 addition, added next to Heisei Mothra. Whether the larva evolves into Heisei Mothra isn't confirmed by any text source yet. Price and stats not published.",
-      "stats": null
+      "note": "Update 54 addition, added next to Heisei Mothra. The Fandom price table lists this larva at level 50 as the requirement for Heisei Mothra. Its own price and stats aren't published.",
+      "stats": null,
+      "unlock": {
+        "answer": "Heisei Mothra Larva's own price isn't printed yet, but it's the step before Heisei Mothra: level it to 50 to unlock the adult.",
+        "cost": null,
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "price is a placeholder; Heisei Mothra needs this larva at level 50"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Godzilla In Hell",
@@ -46,8 +74,28 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Update 53 (Halloween 2) addition, released Oct 11 2026. Based on the IDW \"Godzilla in Hell\" comic. Nerfed in Update 54: A1 max damage 690→640, A2 980→900, A5 400→385, A3 Special 300→200, Immortal Apocalypse 2→1. One buff: A5 Special (Devil Bat Power) 350→450. Price and full stat panel not frame-read yet.",
-      "stats": null
+      "note": "Update 53 (Halloween 2) addition, released Oct 11 2026. Based on the IDW \"Godzilla in Hell\" comic. Nerfed in Update 54: A1 max damage 690→640, A2 980→900, A5 400→385, A3 Special 300→200, Immortal Apocalypse 2→1. One buff: A5 Special (Devil Bat Power) 350→450. Full stat panel not frame-read yet.",
+      "stats": null,
+      "unlock": {
+        "answer": "Godzilla In Hell is free, but only as the level 100 reward on the Halloween battle pass. You can't buy it with Cells.",
+        "cost": "Free (battle pass reward)",
+        "requires": [
+          "Reach level 100 on the Halloween battle pass"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Free, Level 100 Battlepass"
+          },
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-25",
+            "says": "Reach level 100 in the battlepass"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Titanus Behemoth",
@@ -154,6 +202,24 @@
         ],
         "gauge": "Catastrophe Gauge (x/200) — combat meter visible on HUD",
         "source": "frame-read from 'HOW STRONG IS LEVEL 200 GODZILLA ULTIMA' creator video (Sep 2026), Update 51 build; damage values at a 33-point strength allocation, so treat as mid-build reference not max"
+      },
+      "unlock": {
+        "answer": "Godzilla Ultima costs 2,000,000 Cells per the latest wiki edit, which cites an in-game screenshot. An August table had it at 1,000,000.",
+        "cost": "2,000,000 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-18",
+            "says": "2M Cells (cites an in-game price screenshot)"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "1,000,000 Cells plus an unpublished extra requirement"
+          }
+        ],
+        "conflict": "The 1,000,000 figure is from August. Before Update 51 a community video also showed a level-100 chain (Jet Jaguar Beta, Aquatilis, Amphibia, Terrestris, 100 defeats each). Neither price table lists that chain now."
       }
     },
     {
@@ -164,7 +230,29 @@
       "verified": true,
       "staleTier": "S",
       "stalePrice": "500,000 G-cells (Update 21 era, named creator source)",
-      "note": "Stale-era S tier: crowd-clear farming route (skill 2 + crystal garden detonate, skill 4 pull). Verify current stats."
+      "note": "Stale-era S tier: crowd-clear farming route (skill 2 + crystal garden detonate, skill 4 pull). Verify current stats.",
+      "unlock": {
+        "answer": "Space Godzilla costs 500,000 Cells and needs Heisei Godzilla at level 100, Biollante at level 75 and Godzilla Junior at level 25.",
+        "cost": "500,000 Cells",
+        "requires": [
+          "Heisei Godzilla at level 100",
+          "Biollante at level 75",
+          "Godzilla Junior at level 25"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "500k, Level 100 Heisei, Level 75 Biollante, Level 25 Godzilla Junior"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "500,000 Cells + the same three level gates"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Destoroyah Final Form",
@@ -174,7 +262,28 @@
       "verified": true,
       "staleTier": "S",
       "stalePrice": null,
-      "note": "Destoroyah Final Form is the endgame form of the Destoroyah line. The old tier list had it at S tier, and a named creator called it overpowered before a nerf. Nerf details are unpublished. Forms: Aggregate, Final, Flying, Perfect/Form 4. Current price and stats are unconfirmed."
+      "note": "Destoroyah Final Form is the endgame form of the Destoroyah line. The old tier list had it at S tier, and a named creator called it overpowered before a nerf. Nerf details are unpublished. Forms: Aggregate, Final, Flying, Perfect/Form 4. Current stats are unconfirmed.",
+      "unlock": {
+        "answer": "Destoroyah Final Form costs 1,500,000 Cells and needs both Aggregate and Flying Form at level 100 with 100 kills each.",
+        "cost": "1,500,000 Cells",
+        "requires": [
+          "Destoroyah Aggregate at level 100 with 100 kills",
+          "Destoroyah Flying Form at level 100 with 100 kills"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "1.5m, Level 100 Aggregate + 100 kills, Level 100 Flying Form + 100 kills"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "1,500,000 Cells + both forms at level 100 with 100 kills"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Destoroyah Aggregate",
@@ -184,7 +293,20 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Update 24 addition per stale site."
+      "note": "Update 24 addition per stale site.",
+      "unlock": {
+        "answer": "No source prints Destoroyah Aggregate's price yet. You'll need it at level 100 with 100 kills later, because Final Form requires it.",
+        "cost": null,
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "listed as a requirement for Destoroyah Final Form (level 100 + 100 kills)"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Shimo",
@@ -194,7 +316,28 @@
       "verified": true,
       "staleTier": "A",
       "stalePrice": "500,000 G-cells band (named creator)",
-      "note": "Kill-fed Sky Blast: kills charge the burst, compounds mid-fight."
+      "note": "Kill-fed Sky Blast: kills charge the burst, compounds mid-fight.",
+      "unlock": {
+        "answer": "Shimo costs 300,000 Cells and needs Skar King and Suko, both at level 50.",
+        "cost": "300,000 Cells",
+        "requires": [
+          "Skar King at level 50",
+          "Suko at level 50"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-14",
+            "says": "300k Cells, Level 50 Skar King, Level 50 Suko"
+          },
+          {
+            "from": "Named creator, Update 24-39 era",
+            "date": "2026-05",
+            "says": "500,000 G-cells band"
+          }
+        ],
+        "conflict": "The 500,000 band comes from an older creator source. The October wiki edit is newer."
+      }
     },
     {
       "name": "Monster Zero",
@@ -204,7 +347,27 @@
       "verified": true,
       "staleTier": "A",
       "stalePrice": "Objective unlock (skull collection); skull count unverified — AI wikis only, per kaijualpha.com",
-      "note": "Skill 5 voltage-charge route per Tycooner. Skull locations guide exists (ItzVexo)."
+      "note": "Skill 5 voltage-charge route per Tycooner. Skull locations guide exists (ItzVexo).",
+      "unlock": {
+        "answer": "Monster Zero costs 400,000 Cells and needs Godzilla 2019 at level 100, per the October wiki. Older guides say you get it by collecting skulls.",
+        "cost": "400,000 Cells",
+        "requires": [
+          "Godzilla 2019 at level 100"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-24",
+            "says": "Level 100 Godzilla 2019, 400k Cells"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "10 hidden skulls (skull hunt, not a Cells purchase)"
+          }
+        ],
+        "conflict": "The two sources describe different unlocks. The skull hunt is the August version, and the skulls moved in the August map change. Check the shop card before you farm either one."
+      }
     },
     {
       "name": "Monster X",
@@ -214,7 +377,27 @@
       "verified": true,
       "staleTier": "A",
       "stalePrice": "200,000 G-cells, no prerequisites (named creator)",
-      "note": "Cheapest endgame unlock per stale data; nobody commented on actual play strength."
+      "note": "Nobody has published a take on how strong it plays.",
+      "unlock": {
+        "answer": "Monster X costs 100,000 Cells and needs Final Wars Godzilla at level 50 with 10 kills.",
+        "cost": "100,000 Cells",
+        "requires": [
+          "Final Wars Godzilla at level 50 with 10 kills"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "100k, Level 50 + 10 Kills Final Wars Godzilla"
+          },
+          {
+            "from": "Named creator, August",
+            "date": "2026-08",
+            "says": "200,000 G-cells, no prerequisites"
+          }
+        ],
+        "conflict": "An older creator source said 200,000 with no prerequisites. The October wiki table is newer."
+      }
     },
     {
       "name": "Heisei Godzilla",
@@ -224,7 +407,33 @@
       "verified": true,
       "staleTier": "B",
       "stalePrice": null,
-      "note": "Cell-farming pick: pulse + twin beams snipe crowds from range; assists pay full cells. The official badge list includes Max Heisei Godzilla & Burning Godzilla, confirming a max-progression track. Current price, unlock requirements and full stats are still unpublished; the historical B tier is not a current-update verdict."
+      "note": "Cell-farming pick: pulse + twin beams snipe crowds from range; assists pay full cells. The official badge list includes Max Heisei Godzilla & Burning Godzilla, confirming a max-progression track. Full stats are still unpublished, and the historical B tier is not a current-update verdict.",
+      "unlock": {
+        "answer": "Heisei Godzilla costs 655,000 Cells and needs Godzilla Junior at level 100 plus 15 Heisei Godzilla kills. It used to be 125,000.",
+        "cost": "655,000 Cells",
+        "requires": [
+          "Godzilla Junior at level 100",
+          "15 kills on Heisei Godzilla"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "655k, Level 100 Godzilla Junior, 15 Heisei Godzilla's killed"
+          },
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-26",
+            "says": "655,000 Cells, 15 Heisei Godzilla's killed, Level 100 Godzilla Jr."
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "125,000 Cells, straight purchase"
+          }
+        ],
+        "conflict": "125,000 was the August price. Both October wiki edits list 655,000 plus the gates."
+      }
     },
     {
       "name": "Biollante",
@@ -234,7 +443,30 @@
       "verified": true,
       "staleTier": "B",
       "stalePrice": null,
-      "note": "Named best beginner kaiju by Nerdious Momentos (qualifies: still slow). Update 53 (Oct 11): received a remodel."
+      "note": "Named best beginner kaiju by Nerdious Momentos (qualifies: still slow). Update 53 (Oct 11): received a remodel.",
+      "unlock": {
+        "answer": "Biollante costs 50,000 Cells, with no level or kill requirement. That makes it a common first big buy.",
+        "cost": "50,000 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "50000, None"
+          },
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-11",
+            "says": "50000 Cells"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "50,000 Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Biollante Rose Form",
@@ -254,7 +486,20 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Shin Godzilla second form. Max-progression badge exists."
+      "note": "Shin Godzilla second form. Max-progression badge exists.",
+      "unlock": {
+        "answer": "Kamata Kun is free. It's the first stage of the Shin Godzilla line: level it to 25 to unlock Shinagawa Kun (13,000 Cells).",
+        "cost": "Free",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Kamata Kun free; Shinagawa Kun 13K, Level 25 Kamata Kun"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Showa Anguirus",
@@ -264,7 +509,20 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Fandom also lists Anguirus 1955 — same kaiju, naming variant to dedupe."
+      "note": "Fandom also lists Anguirus 1955 — same kaiju, naming variant to dedupe.",
+      "unlock": {
+        "answer": "Showa Anguirus (Anguirus 1955) is free, one of the starter kaiju.",
+        "cost": "Free",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Anguirus 1955: Free, None"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Gojira 1954",
@@ -274,7 +532,25 @@
       "verified": true,
       "staleTier": "unranked (stale era)",
       "stalePrice": null,
-      "note": "The original and the starter: new accounts spawn with Gojira 1954 and 57 Cells (seen on two creators' fresh-account footage). Stale tier list left 1954 unranked."
+      "note": "The original and the starter: new accounts spawn with Gojira 1954 and 57 Cells (seen on two creators' fresh-account footage). Stale tier list left 1954 unranked.",
+      "unlock": {
+        "answer": "Gojira 1954 is free. New accounts start with it.",
+        "cost": "Free (starter)",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Godzilla 1954: Free, None"
+          },
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-09",
+            "says": "Free"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Godzilla 1955",
@@ -284,7 +560,25 @@
       "verified": true,
       "staleTier": "D",
       "stalePrice": null,
-      "note": "Named near-unusable by Nerdious Momentos in the only balance commentary on record (stale era)."
+      "note": "Named near-unusable by Nerdious Momentos in the only balance commentary on record (stale era).",
+      "unlock": {
+        "answer": "Godzilla 1955 is free, one of the starter kaiju.",
+        "cost": "Free",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Free, None"
+          },
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-09",
+            "says": "Free"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Godzilla 1962",
@@ -294,7 +588,25 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": "King Kong vs Godzilla incarnation."
+      "note": "King Kong vs Godzilla incarnation.",
+      "unlock": {
+        "answer": "Godzilla 1962 costs 6,500 Cells, with no other requirement.",
+        "cost": "6,500 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-07-22",
+            "says": "6500"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "6,500 Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Godzilla 2014",
@@ -304,7 +616,25 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": null
+      "note": null,
+      "unlock": {
+        "answer": "Godzilla 2014 costs 65,000 Cells, with no other requirement. Level it to 50 with 50 kills if you want Godzilla 2019 next.",
+        "cost": "65,000 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "65K, None; Godzilla 2019 needs Godzilla 2014 at level 50 + 50 kills"
+          },
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-14",
+            "says": "65000 Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Godzilla Amphibia",
@@ -334,7 +664,20 @@
       "verified": true,
       "staleTier": "B",
       "stalePrice": null,
-      "note": "Atomic breath crowd spam; Tycooner warns players hunt you for it. Update 53: A5 nerf (max dmg 300→290, burn 90, cooldown 26→32s)."
+      "note": "Atomic breath crowd spam; Tycooner warns players hunt you for it. Update 53: A5 nerf (max dmg 300→290, burn 90, cooldown 26→32s).",
+      "unlock": {
+        "answer": "Godzilla 2000 costs 35,500 Cells, with no other requirement. Level it to 50 with 10 kills if you want Kiryu next.",
+        "cost": "35,500 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "35,500 Cells, None; Kiryu needs Level 50 + 10 Kills Godzilla 2000"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Shin Godzilla",
@@ -344,7 +687,58 @@
       "verified": true,
       "staleTier": "B",
       "stalePrice": null,
-      "note": "Back beam + tail beam angle coverage. Compared with Heisei Godzilla's crowd-farming role, Shin's record is about covering angles rather than a confirmed farming route. Current price, unlock requirements and full stats are not published; the historical B tier is not a current-update verdict."
+      "note": "Back beam + tail beam angle coverage. Compared with Heisei Godzilla's crowd-farming role, Shin's record is about covering angles rather than a confirmed farming route. Full stats are not published, and the historical B tier is not a current-update verdict. Looking for Shin Eva Godzilla? That's a separate Halloween event kaiju with its own page.",
+      "unlock": {
+        "answer": "Shin Godzilla costs 13,750 Cells. Before that, level Kamata Kun (free) to 25, buy Shinagawa Kun (13,000), and level it to 25.",
+        "cost": "13,750 Cells",
+        "requires": [
+          "Own Kamata Kun (free)",
+          "Shinagawa Kun at level 25 (Shinagawa Kun costs 13,000 Cells and needs Kamata Kun at level 25)"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "13,750 Cells, Level 0 Kamata Kun, Level 25 Shinagawa Kun"
+          },
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-14",
+            "says": "13750 Cells"
+          }
+        ],
+        "conflict": null
+      }
+    },
+    {
+      "name": "Shin Eva Godzilla",
+      "slug": "shin-eva-godzilla",
+      "era": "Shin",
+      "source": "Fandom page (Oct 25 2026) + Update 52 game description (Oct 3 2026) + kaijualpha.net",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Halloween 2026 event kaiju, added in Update 52 with Skeleton Gojira 1954 and Godzilla In Hell. Fandom lists 4,500 HP and 3% per second health and energy regen. It isn't the same kaiju as Shin Godzilla.",
+      "unlock": {
+        "answer": "Shin Eva Godzilla costs 3,000 Tokens in the Halloween event shop, not Cells. Tokens come from codes and Robux packs.",
+        "cost": "3,000 Tokens (event shop)",
+        "requires": [
+          "Buy it during the Halloween event"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-25",
+            "says": "3,000 Tokens, event shop"
+          },
+          {
+            "from": "kaijualpha.net Tokens guide",
+            "date": "2026-10",
+            "says": "Tokens: code SrryForBugGuys (100), Robux packs 100/500/2,799; no farmable route"
+          }
+        ],
+        "conflict": "kaijualpha.net's Shin Eva guide says no price was published when it was written. The Fandom page added the Token price later."
+      }
     },
     {
       "name": "Final Wars Godzilla",
@@ -354,7 +748,25 @@
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": null,
-      "note": "Final Wars Godzilla was live by 2026-07-15, when the official place name referenced it. kaijualpha.com calls Update 38 the likely addition, not a confirmed patch number. Stats and unlock cost remain undocumented. Its unranked block means no reliable ranking was published, not that the kaiju is weak."
+      "note": "Final Wars Godzilla was live by 2026-07-15, when the official place name referenced it. kaijualpha.com calls Update 38 the likely addition, not a confirmed patch number. Stats remain undocumented. Its unranked block means no reliable ranking was published, not that the kaiju is weak.",
+      "unlock": {
+        "answer": "Final Wars Godzilla costs 200,000 Cells, with no other requirement. Level it to 50 with 10 kills if you want Monster X next.",
+        "cost": "200,000 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "200k, None"
+          },
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-28",
+            "says": "200k"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Godzilla Minus One",
@@ -364,7 +776,22 @@
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": null,
-      "note": null
+      "note": null,
+      "unlock": {
+        "answer": "Godzilla Minus One costs 55,500 Cells and needs Godzilla 1954 at level 100 with 20 kills.",
+        "cost": "55,500 Cells",
+        "requires": [
+          "Godzilla 1954 at level 100 with 20 kills"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "55,500 Cells, Level 100 Godzilla 1954 + 20 Kills"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Godzilla Aquatilis",
@@ -384,7 +811,27 @@
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": "unknown — spend quotes are not prices",
-      "note": "Among the most searched kaiju per stale site analytics."
+      "note": "Among the most searched kaiju per stale site analytics.",
+      "unlock": {
+        "answer": "Showa Ghidorah is free if you join the developer's Roblox group. The Monsterverse Ghidorah is listed as Monster Zero (400,000 Cells).",
+        "cost": "Free (group members)",
+        "requires": [
+          "Join the game's Roblox group"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Showa Ghidorah: Free*, Group Member"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "Showa Ghidorah free after you join the SULU OPPA group"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Queen MUTO",
@@ -404,7 +851,20 @@
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": null,
-      "note": null
+      "note": null,
+      "unlock": {
+        "answer": "No source prints Skar King's price yet. Shimo needs it at level 50.",
+        "cost": null,
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-14",
+            "says": "Shimo: Level 50 Skar King, Level 50 Suko, 300k Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Kong 2021",
@@ -414,7 +874,20 @@
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": null,
-      "note": "Distinct from Kong 1962 per stale roster."
+      "note": "Distinct from Kong 1962 per stale roster.",
+      "unlock": {
+        "answer": "No source prints Kong 2021's price yet. Mechagodzilla 2021 needs it at level 45 with 25 kills, so it's worth levelling.",
+        "cost": null,
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Mechagodzilla 2021 page",
+            "date": "2026-10-26",
+            "says": "Mechagodzilla 2021 needs Level 45 on Kong 2021 + 25 kills"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Kong 1962",
@@ -424,7 +897,20 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": null
+      "note": null,
+      "unlock": {
+        "answer": "Kong 1962 was listed at 5,450 Cells, but that wiki page is marked as old content. Check the shop card.",
+        "cost": "5,450 Cells (old listing)",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, kaiju page (marked old content)",
+            "date": "2026-07-22",
+            "says": "5,450 U-cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Megalon",
@@ -434,7 +920,25 @@
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": null,
-      "note": null
+      "note": null,
+      "unlock": {
+        "answer": "Megalon costs 40,000 Cells, with no other requirement.",
+        "cost": "40,000 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "40000, None"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "40,000 Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Suko",
@@ -444,7 +948,20 @@
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": null,
-      "note": null
+      "note": null,
+      "unlock": {
+        "answer": "No source prints Suko's price yet. Shimo needs it at level 50.",
+        "cost": null,
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-14",
+            "says": "Shimo: Level 50 Skar King, Level 50 Suko, 300k Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Doug",
@@ -474,7 +991,22 @@
       "verified": false,
       "staleTier": "unranked",
       "stalePrice": null,
-      "note": null
+      "note": null,
+      "unlock": {
+        "answer": "The wiki lists Kiryu at 100,000 Cells, plus Godzilla 2000 at level 50 with 10 kills. Whether that's this Type 3 form isn't confirmed.",
+        "cost": "100,000 Cells",
+        "requires": [
+          "Godzilla 2000 at level 50 with 10 kills"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Kiryu: 100k, Level 50 + 10 Kills Godzilla 2000"
+          }
+        ],
+        "conflict": "The table says \"Kiryu\" with no form name."
+      }
     },
     {
       "name": "Mechagodzilla 1974",
@@ -494,7 +1026,25 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": null
+      "note": null,
+      "unlock": {
+        "answer": "Jet Jaguar 1973 costs 9,500 Cells, with no other requirement. Get it to level 15 if you want Hollow Jet Jaguar.",
+        "cost": "9,500 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2022-10-08",
+            "says": "9,500 U-cells"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "9,500 Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Hollow Jet Jaguar",
@@ -504,7 +1054,27 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Singular Point variant."
+      "note": "Singular Point variant.",
+      "unlock": {
+        "answer": "Hollow Jet Jaguar costs 15,000 and needs Jet Jaguar 1973 at level 15. It was sold for H-cells in the 2022 Halloween event.",
+        "cost": "15,000 (H-cells, 2022 event)",
+        "requires": [
+          "Jet Jaguar 1973 at level 15"
+        ],
+        "sources": [
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-07-22",
+            "says": "15,000 U-cells and level 15 Jet Jaguar 1973"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "15,000 Cells + level 15 Jet Jaguar 1973; described as the 2022 Halloween H-cells purchase"
+          }
+        ],
+        "conflict": "It was an event purchase, so check whether the shop still sells it."
+      }
     },
     {
       "name": "Showa Jet Jaguar",
@@ -514,7 +1084,25 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": null
+      "note": null,
+      "unlock": {
+        "answer": "Showa Jet Jaguar costs 50,000 Cells, with no other requirement.",
+        "cost": "50,000 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "50000, None"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "50,000 Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Showa Gigan",
@@ -524,7 +1112,25 @@
       "verified": true,
       "staleTier": "C (group verdict)",
       "stalePrice": null,
-      "note": "C-tier group verdict: slow, long cooldowns; melee-only farming is worst way to earn cells."
+      "note": "C-tier group verdict: slow, long cooldowns; melee-only farming is worst way to earn cells.",
+      "unlock": {
+        "answer": "Showa Gigan costs 35,000 Cells, with no other requirement.",
+        "cost": "35,000 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "35000, None"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "35,000 Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Rodan",
@@ -534,7 +1140,25 @@
       "verified": true,
       "staleTier": "C (group)",
       "stalePrice": null,
-      "note": "Group verdict applies; no individual commentary published."
+      "note": "Group verdict applies; no individual commentary published.",
+      "unlock": {
+        "answer": "Showa Rodan costs 2,250 Cells, with no other requirement.",
+        "cost": "2,250 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Showa Rodan: 2250, None"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "2,250 Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Showa Hedorah",
@@ -544,7 +1168,25 @@
       "verified": true,
       "staleTier": "C (group)",
       "stalePrice": null,
-      "note": null
+      "note": null,
+      "unlock": {
+        "answer": "Showa Hedorah costs 50,000 Cells, with no other requirement.",
+        "cost": "50,000 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "50000, None"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "50,000 Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Mothra Larva 1964",
@@ -554,7 +1196,25 @@
       "verified": true,
       "staleTier": "C (group)",
       "stalePrice": null,
-      "note": "Searching for Kaiju Alpha Mothra? Read the Showa Mothra page: Update 54 notes say the removed Mothra was the Showa one, and Heisei Mothra is the new one. This 1964 larva page only covers the old larva entry and may be stale too."
+      "note": "Searching for Kaiju Alpha Mothra? Read the Showa Mothra page: Update 54 notes say the removed Mothra was the Showa one, and Heisei Mothra is the new one. This 1964 larva page only covers the old larva entry and may be stale too.",
+      "unlock": {
+        "answer": "Mothra Larva 1964 costs 1,000 Cells, with no other requirement. This is the old Showa larva, not the Heisei one.",
+        "cost": "1,000 Cells",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Mothra Larva: 1000, None"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "1,000 Cells"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Mothra Imago 1964",
@@ -564,7 +1224,25 @@
       "verified": false,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Adult form; larva↔imago progression likely, confirm in-game. Update 54 notes (Oct 2026) say 'the removed Mothra was Showa', so this 1964 Mothra may no longer be in the game. Unconfirmed until someone shows it in the current build."
+      "note": "Adult form; larva↔imago progression likely, confirm in-game. Update 54 notes (Oct 2026) say 'the removed Mothra was Showa', so this 1964 Mothra may no longer be in the game. Unconfirmed until someone shows it in the current build.",
+      "unlock": {
+        "answer": "Showa Mothra (Mothra Imago 1964) was listed at 3,500 Cells, but Update 54 notes say the Showa Mothra was removed.",
+        "cost": "3,500 Cells (may be removed)",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Showa Mothra: 3500, None"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "3,500 Cells"
+          }
+        ],
+        "conflict": "Update 54 notes say the removed Mothra was the Showa one."
+      }
     },
     {
       "name": "Showa Mothra",
@@ -574,7 +1252,25 @@
       "verified": false,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Update 54 notes say 'the removed Mothra was Showa, not Heisei', so the Showa Mothra looks removed from the game. Heisei Mothra is the new one. Kept here for reference until the dev confirms."
+      "note": "Update 54 notes say 'the removed Mothra was Showa, not Heisei', so the Showa Mothra looks removed from the game. Heisei Mothra is the new one. Kept here for reference until the dev confirms.",
+      "unlock": {
+        "answer": "Showa Mothra was listed at 3,500 Cells, but Update 54 notes say it was removed. Heisei Mothra (80,000 Cells) is the current Mothra.",
+        "cost": "3,500 Cells (may be removed)",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Showa Mothra: 3500, None"
+          },
+          {
+            "from": "kaijualpha.net price table",
+            "date": "2026-08-30",
+            "says": "3,500 Cells"
+          }
+        ],
+        "conflict": "Update 54 notes say the removed Mothra was the Showa one."
+      }
     },
     {
       "name": "Tank",
@@ -584,7 +1280,20 @@
       "verified": false,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Playable military unit, not a kaiju — include in roster but flag."
+      "note": "Playable military unit, not a kaiju — include in roster but flag.",
+      "unlock": {
+        "answer": "Tank is a 50 Robux game pass, not a Cells purchase.",
+        "cost": "50 Robux (game pass)",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Tank page",
+            "date": "2026-07-22",
+            "says": "50 Robux, Tank Game Pass"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Destoroyah Flying Form",
@@ -594,7 +1303,20 @@
       "verified": true,
       "staleTier": null,
       "stalePrice": null,
-      "note": "Form page; evolution step unclear. This page is the Flying form only. For the Final Form, see the Destoroyah Final Form page."
+      "note": "Form page; evolution step unclear. This page is the Flying form only. For the Final Form, see the Destoroyah Final Form page.",
+      "unlock": {
+        "answer": "No source prints Destoroyah Flying Form's price yet. Final Form needs it at level 100 with 100 kills, so level it before saving for Final Form.",
+        "cost": null,
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "listed as a requirement for Destoroyah Final Form (level 100 + 100 kills)"
+          }
+        ],
+        "conflict": null
+      }
     },
     {
       "name": "Godzilla 1954",
@@ -604,7 +1326,25 @@
       "verified": true,
       "staleTier": "unranked",
       "stalePrice": null,
-      "note": "Possible duplicate of Gojira 1954 — dedupe rule: badge name wins, this is the localization alias."
+      "note": "Possible duplicate of Gojira 1954 — dedupe rule: badge name wins, this is the localization alias.",
+      "unlock": {
+        "answer": "Godzilla 1954 is free. New accounts start with it.",
+        "cost": "Free (starter)",
+        "requires": [],
+        "sources": [
+          {
+            "from": "Fandom wiki, Kaiju price table",
+            "date": "2026-10-21",
+            "says": "Godzilla 1954: Free, None"
+          },
+          {
+            "from": "Fandom wiki, kaiju page",
+            "date": "2026-10-09",
+            "says": "Free"
+          }
+        ],
+        "conflict": null
+      }
     }
   ],
   "codes": [
