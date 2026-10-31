@@ -40,6 +40,28 @@
           }
         ],
         "conflict": null
+      },
+      "detail": {
+        "h": "The larva-to-adult chain",
+        "intro": "Heisei Mothra is not a standalone purchase — it is the second step of a two-stage chain. You buy Heisei Mothra Larva first, raise it to level 50, and only then does the adult become available at 80,000 Cells.",
+        "rows": [
+          [
+            "Step 1",
+            "Heisei Mothra Larva",
+            "price not printed"
+          ],
+          [
+            "Step 2",
+            "larva at level 50",
+            "the gate"
+          ],
+          [
+            "Step 3",
+            "Heisei Mothra",
+            "80,000 Cells"
+          ]
+        ],
+        "outro": "Budget for both stages, not just the 80,000 Cells: the larva price is still a placeholder on the wiki table, and it is the step most players miss when they plan the purchase."
       }
     },
     {
@@ -64,6 +86,28 @@
           }
         ],
         "conflict": null
+      },
+      "detail": {
+        "h": "Where this sits in the chain",
+        "intro": "The larva is the entry step for the Heisei Mothra line, not a kaiju you build around. Its only published purpose is the level-50 gate that unlocks the adult form.",
+        "rows": [
+          [
+            "This kaiju",
+            "Heisei Mothra Larva",
+            "entry step"
+          ],
+          [
+            "Requirement to clear",
+            "reach level 50",
+            "on this kaiju"
+          ],
+          [
+            "Unlocks",
+            "Heisei Mothra",
+            "80,000 Cells"
+          ]
+        ],
+        "outro": "No stats or price are printed for the larva itself yet. Until they are, treat it as a toll on the way to Heisei Mothra rather than a choice worth evaluating on its own."
       }
     },
     {
@@ -95,6 +139,43 @@
           }
         ],
         "conflict": null
+      },
+      "detail": {
+        "h": "Update 54 balance changes",
+        "intro": "Godzilla In Hell was nerfed in Update 54, with one buff. Every number below is from the Update 54 balance notes, so you can see exactly how much attack power came off each skill.",
+        "rows": [
+          [
+            "A1 max damage",
+            "690",
+            "640"
+          ],
+          [
+            "A2 max damage",
+            "980",
+            "900"
+          ],
+          [
+            "A5 max damage",
+            "400",
+            "385"
+          ],
+          [
+            "A3 Special",
+            "300",
+            "200"
+          ],
+          [
+            "Immortal Apocalypse (uses)",
+            "2",
+            "1"
+          ],
+          [
+            "A5 Special (Devil Bat Power)",
+            "350",
+            "450"
+          ]
+        ],
+        "outro": "Net effect: five skills lost damage and only one gained, so the kaiju trades burst for endurance after the patch. The full stat panel has not been frame-read, so HP and energy are not listed here."
       }
     },
     {
@@ -117,7 +198,34 @@
       "staleTier": null,
       "stalePrice": null,
       "note": "Buffed in Update 53. HP: base 3,200→3,500, max 3,975→4,300. Every skill got +30 damage at base and max. Price and full kit not published yet.",
-      "stats": null
+      "stats": null,
+      "detail": {
+        "h": "Update 53 balance changes",
+        "intro": "Male MUTO was buffed in Update 53. These are the published before/after numbers — the only hard stats that exist for it in text form, since the full stat panel has not been frame-read yet.",
+        "rows": [
+          [
+            "Base HP",
+            "3,200",
+            "3,500"
+          ],
+          [
+            "Max HP",
+            "3,975",
+            "4,300"
+          ],
+          [
+            "Every skill, base damage",
+            "+0",
+            "+30"
+          ],
+          [
+            "Every skill, max damage",
+            "+0",
+            "+30"
+          ]
+        ],
+        "outro": "Price and the rest of the kit are still unpublished, so this page tracks the numbers that are actually printed rather than guessing at a full panel."
+      }
     },
     {
       "name": "Female MUTO",

@@ -56,6 +56,18 @@ export type Kaiju = {
   note: string | null;
   /** Frame-read in-game stats (only present where creator footage showed the panel). */
   stats?: KaijuStats;
+  /**
+   * Dated, sourced detail block — balance-change tables and unlock chains that are
+   * already printed in the notes/sources, structured so the page can show them as
+   * a table instead of one paragraph. Only fill it with numbers that literally
+   * appear in `note` / `unlock.sources`; never estimate (see AGENTS.md).
+   */
+  detail?: {
+    h: string;
+    intro: string;
+    rows: Array<[string, string, string]>;
+    outro?: string;
+  };
   unlock?: Unlock;
 };
 

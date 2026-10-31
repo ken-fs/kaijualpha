@@ -174,6 +174,36 @@ export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) 
             </div>
           )}
 
+          {k.detail && (
+            <section className="mt-12">
+              <h2 className="text-sm font-medium">{k.detail.h}</h2>
+              <p className="mt-3 max-w-[62ch] text-sm text-muted-foreground">{k.detail.intro}</p>
+              <div className="mt-4 overflow-x-auto rounded-[var(--radius-container)] border rule">
+                <table className="w-full text-sm">
+                  <thead className="bg-muted/50 text-left text-xs text-muted-foreground">
+                    <tr>
+                      <th className="px-4 py-2 font-medium">What</th>
+                      <th className="px-4 py-2 font-medium">Before</th>
+                      <th className="px-4 py-2 font-medium">After</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {k.detail.rows.map(([what, before, after]) => (
+                      <tr key={what} className="border-t rule">
+                        <td className="px-4 py-2">{what}</td>
+                        <td className="px-4 py-2 font-mono text-xs text-muted-foreground tabular">{before}</td>
+                        <td className="px-4 py-2 font-mono text-xs tabular">{after}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              {k.detail.outro && (
+                <p className="mt-3 max-w-[62ch] text-sm text-muted-foreground">{k.detail.outro}</p>
+              )}
+            </section>
+          )}
+
           {k.note && (
             <>
               <h2 className="mt-12 text-sm font-medium">Notes from the record</h2>
