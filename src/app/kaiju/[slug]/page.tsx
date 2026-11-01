@@ -30,11 +30,12 @@ export async function generateMetadata({
   const lead = firstSentence(k.note ?? "");
   const tierBit = k.staleTier ? ` Last published tier: ${k.staleTier}.` : "";
   const description = clampMeta(
-    k.unlock
-      ? k.unlock.answer
-      : k.verified
-        ? `${k.name} is a playable ${era}-era kaiju in ${brand}.${lead ? ` ${lead}` : ""}${tierBit}`
-        : `${k.name} is in the Kaiju Alpha record but no current source confirms it in the live build.${lead ? ` ${lead}` : ""}`,
+    k.serpDescription ??
+      (k.unlock
+        ? k.unlock.answer
+        : k.verified
+          ? `${k.name} is a playable ${era}-era kaiju in ${brand}.${lead ? ` ${lead}` : ""}${tierBit}`
+          : `${k.name} is in the Kaiju Alpha record but no current source confirms it in the live build.${lead ? ` ${lead}` : ""}`),
   );
 
   return {
@@ -204,6 +205,13 @@ export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) 
             </section>
           )}
 
+          {k.verdict && (
+            <section className="mt-12">
+              <h2 className="text-sm font-medium">Is {k.name} worth unlocking?</h2>
+              <p className="mt-3 max-w-[62ch] text-sm text-muted-foreground">{k.verdict}</p>
+            </section>
+          )}
+
           {k.note && (
             <>
               <h2 className="mt-12 text-sm font-medium">Notes from the record</h2>
@@ -278,6 +286,8 @@ export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) 
 }
 
 function UnlockAnswer({ k, unlock }: { k: Kaiju; unlock: Unlock }) {
+  const steps = [...unlock.requires, ...(unlock.cost ? [`Buy ${k.name} for ${unlock.cost}.`] : [])];
+
   return (
     <section
       aria-labelledby="how-to-get"
@@ -290,13 +300,18 @@ function UnlockAnswer({ k, unlock }: { k: Kaiju; unlock: Unlock }) {
       {(unlock.cost || unlock.requires.length > 0) && (
         <dl className="mt-4 grid gap-px overflow-hidden rounded-[var(--radius-container)] border rule bg-border sm:grid-cols-[auto_1fr]">
           {unlock.cost && <Stat label="Cost" value={unlock.cost} />}
-          {unlock.requires.length > 0 && (
+          {steps.length > 1 && (
             <div className="bg-card p-4">
-              <dt className="text-xs text-muted-foreground">Requirements</dt>
-              <dd className="mt-1">
-                <ul className="list-disc space-y-1 pl-4 text-sm">
-                  {unlock.requires.map((r) => (
-                    <li key={r}>{r}</li>
+              <dt className="text-xs text-muted-foreground">Unlock checklist</dt>
+              <dd className="mt-2">
+                <ul className="space-y-2 text-sm">
+                  {steps.map((step) => (
+                    <li key={step}>
+                      <label className="flex cursor-pointer items-start gap-2">
+                        <input type="checkbox" className="mt-0.5" />
+                        <span>{step}</span>
+                      </label>
+                    </li>
                   ))}
                 </ul>
               </dd>

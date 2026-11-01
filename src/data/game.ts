@@ -54,6 +54,9 @@ export type Kaiju = {
   staleTier: string | null;
   stalePrice: string | null;
   note: string | null;
+  /** Optional page-specific search snippet and evidence-bound purchase guidance. */
+  serpDescription?: string;
+  verdict?: string;
   /** Frame-read in-game stats (only present where creator footage showed the panel). */
   stats?: KaijuStats;
   /**
