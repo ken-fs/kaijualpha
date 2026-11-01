@@ -30,11 +30,11 @@ export const metadata: Metadata = {
   // 2026-10-23：模板不再追加 "| Kaiju Alpha Guide"。每个页面标题里本来就有 "Kaiju Alpha"，
   // 这个 20 字符的尾巴把全站标题顶到 66–108 字符，SERP 全部截断、游戏名出现两次。
   title: {
-    default: "Kaiju Alpha (Roblox) — Codes, Kaiju Roster & Evolutions",
+    default: "Kaiju Alpha (Roblox) — Kaiju Roster & Evolutions",
     template: "%s",
   },
   description:
-    "Kaiju Alpha (Roblox) — codes with their verification status, the full kaiju roster by era, evolution lines and unlock requirements. Sourced, no invented numbers.",
+    "Kaiju Alpha (Roblox) — the full kaiju roster by era, evolution lines and unlock requirements, with named sources and no invented numbers.",
   openGraph: {
     type: "website",
     siteName: "Kaiju Alpha Guide",

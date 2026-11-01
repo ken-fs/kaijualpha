@@ -2,22 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { codes, game, kaiju, verifiedKaiju, gaps, LAST_CHECKED, visitsPerFavourite } from "@/data/game";
-import { CopyCode } from "@/components/copy-code";
 import { Reveal } from "@/components/reveal";
 import { AdsterraBanner } from "@/components/adsterra-banner";
 import { LEADERBOARD, RECTANGLE } from "@/lib/ads";
 
 export const metadata: Metadata = {
-  title: "Kaiju Alpha (Roblox) — Codes, Kaiju Roster & Evolutions",
+  title: "Kaiju Alpha (Roblox) — Kaiju Roster & Evolutions",
   description:
-    "Kaiju Alpha (Roblox): verified codes, the full kaiju roster with named sources, evolution and unlock requirements, and what is still unpublished.",
+    "Kaiju Alpha (Roblox): the full kaiju roster with named sources, evolution and unlock requirements, and what is still unpublished.",
   alternates: { canonical: "/" },
 };
 
 const nf = new Intl.NumberFormat("en-US");
 
 export default function HomePage() {
-  const newestCode = codes[0];
+  const activeCodeCount = codes.filter((c) => c.status === "active").length;
 
   return (
     <div>
@@ -71,14 +70,16 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {newestCode && (
-            <div className="mt-8 flex max-w-xl flex-wrap items-center gap-3 rounded-[var(--radius-container)] border border-primary/30 bg-background/55 p-4 backdrop-blur">
+          {activeCodeCount > 0 && (
+            <Link
+              href="/codes/"
+              className="mt-8 flex max-w-xl flex-wrap items-center justify-between gap-3 rounded-[var(--radius-container)] border border-primary/30 bg-background/55 p-4 backdrop-blur"
+            >
               <span className="text-sm text-muted-foreground">
-                {newestCode.status === "active" ? "Newest code (verified ×2 creators):" : "Newest code (unverified):"}
+                {activeCodeCount} active codes · checked {LAST_CHECKED}
               </span>
-              <CopyCode code={newestCode.code} />
-              <span className="text-sm font-medium text-primary">{newestCode.reward}</span>
-            </div>
+              <span className="text-sm font-medium text-primary">View codes →</span>
+            </Link>
           )}
         </div>
       </section>
@@ -124,6 +125,24 @@ export default function HomePage() {
             />
           </div>
         </Reveal>
+
+        <nav aria-label="All Kaiju Alpha kaiju" className="mt-14">
+          <h2 className="text-sm font-medium">All Kaiju Alpha kaiju</h2>
+          <p className="mt-2 max-w-[62ch] text-sm text-muted-foreground">
+            Every recorded form has its own page with its era, verification status and published unlock requirements.
+          </p>
+          <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+            {kaiju.map((k) => (
+              <Link
+                key={k.slug}
+                href={`/kaiju/${k.slug}/`}
+                className="rounded-[var(--radius-control)] border rule bg-card px-3 py-2 text-sm transition-colors hover:border-primary/50 hover:text-primary"
+              >
+                {k.name}
+              </Link>
+            ))}
+          </div>
+        </nav>
 
         <div className="mt-10 hidden md:block">
           <AdsterraBanner slot={LEADERBOARD} />
