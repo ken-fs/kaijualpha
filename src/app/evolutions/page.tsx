@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { kaiju, game, LAST_CHECKED } from "@/data/game";
+import { VisualPageHeader } from "@/components/visual-page-header";
 
 export const metadata: Metadata = {
   title: "Kaiju Alpha evolutions and unlock requirements",
@@ -17,20 +18,19 @@ export default function EvolutionsPage() {
 
   return (
     <article className="mx-auto w-full max-w-6xl px-5">
-      <header className="pt-12 pb-10">
-        <p className="text-xs font-medium tracking-wide text-primary uppercase">
-          Evolutions · updated {LAST_CHECKED}
-        </p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Evolution lines and unlock requirements
-        </h1>
-        <p className="mt-4 max-w-[62ch] text-muted-foreground">
-          &quot;Evolved Godzilla requirements&quot; is one of the most searched
-          questions about {game.name} and the answer has never been written down —
-          only predicted in videos. This page publishes the lines that are confirmed,
-          marks the requirements nobody has verified, and skips the guesses entirely.
-        </p>
-      </header>
+      <VisualPageHeader
+        eyebrow={`Evolutions · updated ${LAST_CHECKED}`}
+        title="Evolution lines and unlock requirements"
+        image="/images/brand/screenshot-1.png"
+        description={
+          <>
+            &quot;Evolved Godzilla requirements&quot; is one of the most searched
+            questions about {game.name} and the answer has never been written down —
+            only predicted in videos. This page publishes the lines that are confirmed,
+            marks the requirements nobody has verified, and skips the guesses entirely.
+          </>
+        }
+      />
 
       <div className="space-y-10 pb-16">
         <section>

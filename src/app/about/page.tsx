@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { game, gaps, LAST_CHECKED } from "@/data/game";
+import { VisualPageHeader } from "@/components/visual-page-header";
 
 export const metadata: Metadata = {
   title: "About This Kaiju Alpha Reference — Sources & Method",
@@ -12,20 +13,19 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <article className="mx-auto w-full max-w-6xl px-5">
-      <header className="pt-12 pb-10">
-        <p className="text-xs font-medium tracking-wide text-primary uppercase">
-          About · updated {LAST_CHECKED}
-        </p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-          How this site handles the truth
-        </h1>
-        <p className="mt-4 max-w-[62ch] text-muted-foreground">
-          {game.name} patches almost daily — Update 51 arrived about six and a half
-          weeks after launch. In a game that moves this fast, every stat page on the
-          internet is wrong within a month unless someone re-checks it. This site is
-          built around that fact instead of pretending it away.
-        </p>
-      </header>
+      <VisualPageHeader
+        eyebrow={`About · updated ${LAST_CHECKED}`}
+        title="How this site handles the truth"
+        image="/images/brand/screenshot-1.png"
+        description={
+          <>
+            {game.name} patches almost daily — Update 51 arrived about six and a half
+            weeks after launch. In a game that moves this fast, every stat page on the
+            internet is wrong within a month unless someone re-checks it. This site is
+            built around that fact instead of pretending it away.
+          </>
+        }
+      />
 
       <div className="grid gap-10 pb-16 lg:grid-cols-[1.3fr_1fr]">
         <div className="space-y-10">

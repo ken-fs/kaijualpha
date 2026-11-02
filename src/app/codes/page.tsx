@@ -4,6 +4,7 @@ import { codes, game, LAST_CHECKED } from "@/data/game";
 import { CopyCode } from "@/components/copy-code";
 import { AdsterraBanner } from "@/components/adsterra-banner";
 import { LEADERBOARD } from "@/lib/ads";
+import { VisualPageHeader } from "@/components/visual-page-header";
 
 export const metadata: Metadata = {
   title: "Kaiju Alpha codes — every code and its verification status",
@@ -19,23 +20,21 @@ export default function CodesPage() {
 
   return (
     <article className="mx-auto w-full max-w-6xl px-5">
-      <header className="pt-12 pb-10">
-        <p className="text-xs font-medium tracking-wide text-primary uppercase">
-          Codes · updated {LAST_CHECKED}
-        </p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Kaiju Alpha codes
-        </h1>
-        <p className="mt-4 max-w-[62ch] text-muted-foreground">
-          This game ships a new code with most updates — Update 51&apos;s announcement
-          says &quot;new code&quot; outright. The big media sites (GameRant, Pocket
-          Tactics, Beebom, ProGameGuides) already fight over code clicks, so this page
-          competes on honesty instead: every code below carries its{" "}
-          <strong className="font-medium text-foreground">verification status</strong>,
-          and nothing is called &quot;working&quot; until two independent sources have
-          it.
-        </p>
-      </header>
+      <VisualPageHeader
+        eyebrow={`Codes · updated ${LAST_CHECKED}`}
+        title="Kaiju Alpha codes"
+        description={
+          <>
+            This game ships a new code with most updates — Update 51&apos;s announcement
+            says &quot;new code&quot; outright. The big media sites (GameRant, Pocket
+            Tactics, Beebom, ProGameGuides) already fight over code clicks, so this page
+            competes on honesty instead: every code below carries its{" "}
+            <strong className="font-medium text-foreground">verification status</strong>,
+            and nothing is called &quot;working&quot; until two independent sources have
+            it.
+          </>
+        }
+      />
 
       <div className="grid gap-10 pb-16 lg:grid-cols-[1.3fr_1fr]">
         <div>

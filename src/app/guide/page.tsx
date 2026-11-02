@@ -3,6 +3,7 @@ import Link from "next/link";
 import { systems, game, LAST_CHECKED } from "@/data/game";
 import { AdsterraBanner } from "@/components/adsterra-banner";
 import { LEADERBOARD } from "@/lib/ads";
+import { VisualPageHeader } from "@/components/visual-page-header";
 
 export const metadata: Metadata = {
   title: "Kaiju Alpha Beginner Guide — G-Cells & First Kaiju",
@@ -14,21 +15,20 @@ export const metadata: Metadata = {
 export default function GuidePage() {
   return (
     <article className="mx-auto w-full max-w-6xl px-5">
-      <header className="pt-12 pb-10">
-        <p className="text-xs font-medium tracking-wide text-primary uppercase">
-          Guide · updated {LAST_CHECKED}
-        </p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-          The G-cell economy, explained
-        </h1>
-        <p className="mt-4 max-w-[62ch] text-muted-foreground">
-          {game.name} looks like a fighting game and plays like a farming game.
-          Almost everything — every kaiju, every upgrade — is priced in G-cells, and
-          the way cells flow decides how fast you progress. These are the rules as
-          named creators have demonstrated them on camera; anything that changed in
-          recent updates is flagged.
-        </p>
-      </header>
+      <VisualPageHeader
+        eyebrow={`Guide · updated ${LAST_CHECKED}`}
+        title="The G-cell economy, explained"
+        image="/images/brand/screenshot-1.png"
+        description={
+          <>
+            {game.name} looks like a fighting game and plays like a farming game.
+            Almost everything — every kaiju, every upgrade — is priced in G-cells, and
+            the way cells flow decides how fast you progress. These are the rules as
+            named creators have demonstrated them on camera; anything that changed in
+            recent updates is flagged.
+          </>
+        }
+      />
 
       <div className="grid gap-10 pb-16 lg:grid-cols-[1.3fr_1fr]">
         <div className="space-y-10">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { kaiju, game, staleTiered, LAST_CHECKED } from "@/data/game";
+import { VisualPageHeader } from "@/components/visual-page-header";
 
 export const metadata: Metadata = {
   title: "Kaiju Alpha Tier List — Dated & Sourced Meta",
@@ -19,23 +20,21 @@ export default function TierListPage() {
 
   return (
     <article className="mx-auto w-full max-w-6xl px-5">
-      <header className="pt-12 pb-10">
-        <p className="text-xs font-medium tracking-wide text-primary uppercase">
-          Tier list · record updated {LAST_CHECKED}
-        </p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-          The Kaiju Alpha tier list, with its age printed on it
-        </h1>
-        <p className="mt-4 max-w-[62ch] text-muted-foreground">
-          Nobody has published a text tier list for the current {game.currentUpdate}{" "}
-          meta. What exists is the one serious attempt — from the dedicated site
-          kaijualpha.com, written against the Update 24-39 roster with named creators
-          on camera — and it stopped updating in 2026-05. Below is that record,
-          preserved with its sources. The tier that matters today is the one{" "}
-          <strong className="font-medium text-foreground">your</strong> lobby is
-          playing; use this to see which kaiju were ever worth ranking and how.
-        </p>
-      </header>
+      <VisualPageHeader
+        eyebrow={`Tier list · record updated ${LAST_CHECKED}`}
+        title="The Kaiju Alpha tier list, with its age printed on it"
+        description={
+          <>
+            Nobody has published a text tier list for the current {game.currentUpdate}{" "}
+            meta. What exists is the one serious attempt — from the dedicated site
+            kaijualpha.com, written against the Update 24-39 roster with named creators
+            on camera — and it stopped updating in 2026-05. Below is that record,
+            preserved with its sources. The tier that matters today is the one{" "}
+            <strong className="font-medium text-foreground">your</strong> lobby is
+            playing; use this to see which kaiju were ever worth ranking and how.
+          </>
+        }
+      />
 
       <div className="space-y-10 pb-16">
         {tiers.map(({ tier, list }) =>

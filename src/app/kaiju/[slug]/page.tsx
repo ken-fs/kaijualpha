@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { kaiju, game, type Kaiju, type Unlock } from "@/data/game";
+import { KAIJU_BADGES } from "@/lib/kaiju-art";
 
 export function generateStaticParams() {
   return kaiju.map((k) => ({ slug: k.slug }));
@@ -76,6 +78,7 @@ export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) 
   if (!k) notFound();
 
   const others = kaiju.filter((x) => x.era === k.era && x.slug !== k.slug);
+  const badge = KAIJU_BADGES[k.slug];
 
   return (
     <article className="mx-auto w-full max-w-6xl px-5">
@@ -87,35 +90,53 @@ export default async function KaijuPage({ params }: PageProps<"/kaiju/[slug]">) 
         <span className="text-foreground">{k.name}</span>
       </nav>
 
-      <header className="pt-6 pb-10">
-        <div className="flex flex-wrap items-center gap-3">
-          <StatusChip k={k} />
-          <span className="rounded-[var(--radius-control)] border rule px-3 py-1 text-xs text-muted-foreground">
-            {k.era} era
-          </span>
+      <header className="grid gap-8 pt-6 pb-10 md:grid-cols-[minmax(0,1fr)_260px] md:items-start">
+        <div>
+          <div className="flex flex-wrap items-center gap-3">
+            <StatusChip k={k} />
+            <span className="rounded-[var(--radius-control)] border rule px-3 py-1 text-xs text-muted-foreground">
+              {k.era} era
+            </span>
+          </div>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+            {k.name}
+          </h1>
+          {k.unlock && <UnlockAnswer k={k} unlock={k.unlock} />}
+          <p className="mt-4 max-w-[62ch] text-muted-foreground">
+            {k.verified ? (
+              <>
+                {k.name} is confirmed as a playable kaiju in {game.name} (
+                {game.currentUpdate}) by: <strong className="font-medium text-foreground">{k.source}</strong>.
+                Stats in this game are rebalanced almost every update, so this page tracks
+                what is structurally true — era, unlock shape, evolution line — and dates
+                anything that could have shifted.
+              </>
+            ) : (
+              <>
+                {k.name} appears in the public record for {game.name}, but no current
+                source confirms it in the {game.currentUpdate} build. That is a gap in the
+                public record, not an oversight on this page — check in game before
+                planning around it.
+              </>
+            )}
+          </p>
         </div>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-          {k.name}
-        </h1>
-        {k.unlock && <UnlockAnswer k={k} unlock={k.unlock} />}
-        <p className="mt-4 max-w-[62ch] text-muted-foreground">
-          {k.verified ? (
-            <>
-              {k.name} is confirmed as a playable kaiju in {game.name} (
-              {game.currentUpdate}) by: <strong className="font-medium text-foreground">{k.source}</strong>.
-              Stats in this game are rebalanced almost every update, so this page tracks
-              what is structurally true — era, unlock shape, evolution line — and dates
-              anything that could have shifted.
-            </>
-          ) : (
-            <>
-              {k.name} appears in the public record for {game.name}, but no current
-              source confirms it in the {game.currentUpdate} build. That is a gap in the
-              public record, not an oversight on this page — check in game before
-              planning around it.
-            </>
-          )}
-        </p>
+
+        <figure className="order-first mx-auto w-full max-w-[180px] overflow-hidden rounded-[var(--radius-container)] border rule bg-card md:order-none md:max-w-none">
+          <div className={`relative ${badge ? "aspect-square" : "aspect-video"}`}>
+            <Image
+              src={badge ?? "/images/brand/screenshot-2.png"}
+              alt={badge ? `${k.name} — official Max badge artwork` : "Kaiju Alpha official key art"}
+              fill
+              preload
+              sizes="(max-width: 767px) 320px, 260px"
+              className={badge ? "object-contain" : "object-cover"}
+            />
+          </div>
+          <figcaption className="border-t rule px-3 py-2 text-xs text-muted-foreground">
+            {badge ? "Official Max badge · Roblox" : "Official game art · Roblox"}
+          </figcaption>
+        </figure>
       </header>
 
       <div className="grid gap-10 pb-16 lg:grid-cols-[1.3fr_1fr]">
