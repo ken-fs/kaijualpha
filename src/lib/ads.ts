@@ -39,3 +39,6 @@ export const RECTANGLE: AdSlot = {
   height: 250,
   src: "https://bauval.org/22/9d1c553a780ff761c6dd077a12126689",
 };
+
+/** Site-wide Social Bar script URL from Adsterra. */
+export const SOCIAL_BAR_SRC = "https://bauval.org/14/51a0332b99b0e902f09041f139df71f7";

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 import { SiteNav } from "@/components/site-nav";
 import { WebsiteJsonLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/site";
 import { AnalyticsConsent } from "@/components/analytics-consent";
 import { LAST_CHECKED } from "@/data/game";
+import { SOCIAL_BAR_SRC } from "@/lib/ads";
 
 // Fonts are self-hosted (src/fonts, OFL). next/font/google downloads them during the build,
 // and when that download flakes on Cloudflare's builders the whole build fails
@@ -56,6 +58,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main className="flex-1">{children}</main>
         <SiteFooter />
         <AnalyticsConsent />
+        <Script src={SOCIAL_BAR_SRC} data-cfasync="false" />
       </body>
     </html>
   );
