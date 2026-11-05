@@ -6,16 +6,38 @@
     "universeId": 10732236937,
     "placeId": 127403135954624,
     "created": "2026-08-17",
-    "updated": "2026-10-31",
-    "currentUpdate": "Update 54 (Heisei Mothra)",
-    "visits": 57158509,
-    "favorites": 93857,
-    "ccu": 12349,
-    "visitsPerFavourite": 609,
+    "updated": "2026-11-05",
+    "currentUpdate": "Update 54 (Heisei Mothra, Heisei Battra)",
+    "visits": 60604822,
+    "favorites": 97517,
+    "ccu": 6002,
+    "visitsPerFavourite": 621,
     "genre": "Kaiju PVP battlegrounds — collect, upgrade and fight as Godzilla-era monsters",
     "robloxUrl": "https://www.roblox.com/games/127403135954624/Kaiju-Alpha"
   },
   "kaiju": [
+    {
+      "name": "Heisei Battra",
+      "slug": "heisei-battra",
+      "era": "Heisei",
+      "source": "game description (Update 54 list, Roblox API checked Nov 5 2026)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Added to the Update 54 list on Nov 5 2026: the game description now says \"Added Heisei Battra Larva, Added Heisei Battra, Added 15 Skin\". Price, unlock path and stats aren't published yet.",
+      "stats": null
+    },
+    {
+      "name": "Heisei Battra Larva",
+      "slug": "heisei-battra-larva",
+      "era": "Heisei",
+      "source": "game description (Update 54 list, Roblox API checked Nov 5 2026)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Added to the Update 54 list on Nov 5 2026, next to Heisei Battra. Whether the larva evolves into the adult, its price and its stats aren't published yet.",
+      "stats": null
+    },
     {
       "name": "Heisei Mothra",
       "slug": "heisei-mothra",
@@ -1467,6 +1489,13 @@
   ],
   "codes": [
     {
+      "code": "HAPPYHALLOWEEN",
+      "reward": "31 Levels",
+      "sources": 3,
+      "status": "active",
+      "note": "Listed as working by Beebom (Nov 1), UrGameTips (Nov 1) and GachaPocket (Oct 31). UrGameTips says you must play for 31 minutes before you can redeem it. Beebom doesn't print the reward."
+    },
+    {
       "code": "NOLIMITTOTHELARVA",
       "reward": "20 Levels",
       "sources": 2,
@@ -1594,6 +1623,7 @@
     "Code 'Rose': UrGameTips lists 'Rose' (60M Cells + 60M XP), GachaPocket lists 'ROSE' (two 60-min XP and Cell boosts), Beebom lists 'Rose' as expired — spelling and reward disagree, so it's not on the codes list",
     "Code 'Reward': UrGameTips (Oct 16) lists it as working (2 hours of XP and Cell boosts), GachaPocket (Oct 17) lists it as expired — sources disagree, so it's not on the codes list",
     "Heisei Mothra / Heisei Mothra Larva (Update 54): price, unlock path, stats and whether the larva evolves into the adult are all unpublished in text; showcase videos exist but nobody has frame-read the stat panel",
+    "Heisei Battra / Heisei Battra Larva (Update 54 list, Nov 5): price, unlock path, stats and larva-to-adult link are unpublished; the 15 new skins aren't named by any source",
     "Showa Mothra: Update 54 notes call it 'the removed Mothra' — nobody has said whether it's gone for good or what happened to players who owned it",
     "Godzilla Aquatilis: listed on the roster, but no source gives its price, unlock path, stats or rarity",
     "Roster completeness: Tycooner's template held 53 kaiju as of 2026-06-24; current count likely 60+ but unverified"
