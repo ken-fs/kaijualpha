@@ -6,16 +6,27 @@
     "universeId": 10732236937,
     "placeId": 127403135954624,
     "created": "2026-08-17",
-    "updated": "2026-11-05",
-    "currentUpdate": "Update 54 (Heisei Mothra, Heisei Battra)",
-    "visits": 60604822,
-    "favorites": 97517,
-    "ccu": 6002,
-    "visitsPerFavourite": 621,
+    "updated": "2026-11-07",
+    "currentUpdate": "Update 57 (Muto Prime)",
+    "visits": 62698709,
+    "favorites": 100345,
+    "ccu": 19066,
+    "visitsPerFavourite": 625,
     "genre": "Kaiju PVP battlegrounds — collect, upgrade and fight as Godzilla-era monsters",
     "robloxUrl": "https://www.roblox.com/games/127403135954624/Kaiju-Alpha"
   },
   "kaiju": [
+    {
+      "name": "Muto Prime",
+      "slug": "muto-prime",
+      "era": "Monsterverse",
+      "source": "game description (Update 57, Roblox API checked Nov 8 2026)",
+      "verified": true,
+      "staleTier": null,
+      "stalePrice": null,
+      "note": "Added in Update 57: the game description says \"Added Muto Prime\", and the game was renamed \"[ Muto Prime ] Kaiju Alpha\" on Nov 7 2026. Price, unlock path and stats aren't published yet.",
+      "stats": null
+    },
     {
       "name": "Heisei Battra",
       "slug": "heisei-battra",
