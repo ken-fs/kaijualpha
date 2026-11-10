@@ -6,12 +6,12 @@
     "universeId": 10732236937,
     "placeId": 127403135954624,
     "created": "2026-08-17",
-    "updated": "2026-11-07",
+    "updated": "2026-11-10",
     "currentUpdate": "Update 57 (Muto Prime)",
-    "visits": 62698709,
-    "favorites": 100345,
-    "ccu": 19066,
-    "visitsPerFavourite": 625,
+    "visits": 64443272,
+    "favorites": 102864,
+    "ccu": 2648,
+    "visitsPerFavourite": 626,
     "genre": "Kaiju PVP battlegrounds — collect, upgrade and fight as Godzilla-era monsters",
     "robloxUrl": "https://www.roblox.com/games/127403135954624/Kaiju-Alpha"
   },
@@ -1500,6 +1500,14 @@
   ],
   "codes": [
     {
+      "code": "PRIME",
+      "reward": "Free rewards (amount not printed by sources)",
+      "sources": 2,
+      "status": "active",
+      "added": "2026-11-10",
+      "note": "Update 57 (Muto Prime) code. Listed as working by GachaPocket and Pro Game Guides (both Nov 8). You need to play for 15 minutes first. Neither source says what the reward is, and nobody has shown it on camera yet."
+    },
+    {
       "code": "HAPPYHALLOWEEN",
       "reward": "31 Levels",
       "sources": 3,
@@ -1531,15 +1539,15 @@
       "code": "BadSonglee",
       "reward": "2-hour EXP boost",
       "sources": 2,
-      "status": "active",
-      "note": "Listed as working by UrGameTips (checked Oct 16) and GachaPocket (Oct 17). Beebom (Oct 14) lists it as expired, so try it soon."
+      "status": "expired-risk",
+      "note": "Listed as working by UrGameTips (checked Oct 16) and GachaPocket (Oct 17). Beebom (Nov 1) and Pro Game Guides (Nov 8) list it as expired, while UrGameTips (Nov 1) still lists it as working, so it may already be dead."
     },
     {
       "code": "Singularity",
       "reward": "100,000 Coins",
       "sources": 2,
-      "status": "active",
-      "note": "Update 51 code. Two independent creators redeemed on camera (BMaX Rohaan + Blazze Stars videos, Sep 2026); system message 'has received 100000Coin' visible both times. Still listed as working by UrGameTips (Oct 16) and GachaPocket (Oct 17); Beebom lists it as expired."
+      "status": "expired-risk",
+      "note": "Update 51 code. Two independent creators redeemed on camera (BMaX Rohaan + Blazze Stars videos, Sep 2026); system message 'has received 100000Coin' visible both times. UrGameTips (Nov 1) and GachaPocket (Nov 8) still list it as working, but Beebom (Nov 1) and Pro Game Guides (Nov 8) list it as expired, so it may already be dead."
     },
     {
       "code": "SORRYFORLAG",
