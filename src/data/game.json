@@ -6,11 +6,11 @@
     "universeId": 10732236937,
     "placeId": 127403135954624,
     "created": "2026-08-17",
-    "updated": "2026-11-15",
+    "updated": "2026-11-18",
     "currentUpdate": "Update 57 (Muto Prime)",
-    "visits": 67279694,
-    "favorites": 108397,
-    "ccu": 13246,
+    "visits": 69228651,
+    "favorites": 112882,
+    "ccu": 10114,
     "visitsPerFavourite": 621,
     "genre": "Kaiju PVP battlegrounds — collect, upgrade and fight as Godzilla-era monsters",
     "robloxUrl": "https://www.roblox.com/games/127403135954624/Kaiju-Alpha"
@@ -1540,14 +1540,14 @@
       "reward": "2-hour EXP boost",
       "sources": 2,
       "status": "expired-risk",
-      "note": "Listed as working by UrGameTips (checked Oct 16) and GachaPocket (Oct 17). Beebom (Nov 1) and Pro Game Guides (Nov 8) list it as expired, while UrGameTips (Nov 1) still lists it as working, so it may already be dead."
+      "note": "Listed as working by UrGameTips (checked Oct 16) and GachaPocket (Oct 17). Beebom (Nov 1), Pro Game Guides (Nov 8) and GachaPocket (Nov 14) now list it as expired. Only UrGameTips still lists it as working, so it is almost certainly dead."
     },
     {
       "code": "Singularity",
       "reward": "100,000 Coins",
       "sources": 2,
       "status": "expired-risk",
-      "note": "Update 51 code. Two independent creators redeemed on camera (BMaX Rohaan + Blazze Stars videos, Sep 2026); system message 'has received 100000Coin' visible both times. UrGameTips (Nov 1) and GachaPocket (Nov 8) still list it as working, but Beebom (Nov 1) and Pro Game Guides (Nov 8) list it as expired, so it may already be dead."
+      "note": "Update 51 code. Two independent creators redeemed on camera (BMaX Rohaan + Blazze Stars videos, Sep 2026); system message 'has received 100000Coin' visible both times. Beebom (Nov 1), Pro Game Guides (Nov 8) and GachaPocket (Nov 14) now list it as expired. Only UrGameTips still lists it as working, so it is almost certainly dead."
     },
     {
       "code": "SORRYFORLAG",
